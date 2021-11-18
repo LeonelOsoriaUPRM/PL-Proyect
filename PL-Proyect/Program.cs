@@ -14,6 +14,7 @@ namespace PL_Proyect
         [STAThread]
         static void Main()
         {
+            //this comment is purposely non-sensical
             //this section has been commented out on purpose
             /*
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
