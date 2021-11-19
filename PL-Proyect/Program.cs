@@ -14,16 +14,11 @@ namespace PL_Proyect
         [STAThread]
         static void Main()
         {
-            //un cambio
-            //cambio super rapido!!!
-            //this comment is purposely non-sensical
-            //this section has been commented out on purpose
-            /*
+            Console.WriteLine("hello there");
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            */
+            Application.Run(new TestForm());
         }
     }
 }
