@@ -30,84 +30,106 @@ namespace PL_Proyect
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TestForm));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainMenu = new System.Windows.Forms.MenuStrip();
+            this.tbFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.runToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbSaveAs = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbRun = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbExample = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbHelloWorld = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.outputScreen = new System.Windows.Forms.RichTextBox();
+            this.entryField = new System.Windows.Forms.TextBox();
+            this.codeGoesHere = new System.Windows.Forms.RichTextBox();
+            this.sendButton = new System.Windows.Forms.Button();
+            this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // mainMenu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.runToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tbFile,
+            this.tbEdit,
+            this.tbRun,
+            this.tbExample,
+            this.tbHelp});
+            this.mainMenu.Location = new System.Drawing.Point(0, 0);
+            this.mainMenu.Name = "mainMenu";
+            this.mainMenu.Size = new System.Drawing.Size(944, 24);
+            this.mainMenu.TabIndex = 0;
+            this.mainMenu.Text = "menuStrip1";
             // 
-            // fileToolStripMenuItem
+            // tbFile
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.openToolStripMenuItem,
+            this.tbFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tbNew,
+            this.tbOpen,
             this.toolStripSeparator1,
-            this.saveAsToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.tbSaveAs});
+            this.tbFile.Name = "tbFile";
+            this.tbFile.Size = new System.Drawing.Size(37, 20);
+            this.tbFile.Text = "File";
             // 
-            // newToolStripMenuItem
+            // tbNew
             // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
-            this.newToolStripMenuItem.Text = "New";
+            this.tbNew.Name = "tbNew";
+            this.tbNew.Size = new System.Drawing.Size(111, 22);
+            this.tbNew.Text = "New";
             // 
-            // openToolStripMenuItem
+            // tbOpen
             // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
-            this.openToolStripMenuItem.Text = "Open";
+            this.tbOpen.Name = "tbOpen";
+            this.tbOpen.Size = new System.Drawing.Size(111, 22);
+            this.tbOpen.Text = "Open";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(108, 6);
             // 
-            // saveAsToolStripMenuItem
+            // tbSaveAs
             // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
-            this.saveAsToolStripMenuItem.Text = "SaveAs";
+            this.tbSaveAs.Name = "tbSaveAs";
+            this.tbSaveAs.Size = new System.Drawing.Size(111, 22);
+            this.tbSaveAs.Text = "SaveAs";
+            this.tbSaveAs.Click += new System.EventHandler(this.tbSaveAs_Click);
             // 
-            // editToolStripMenuItem
+            // tbEdit
             // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "Edit";
+            this.tbEdit.Name = "tbEdit";
+            this.tbEdit.Size = new System.Drawing.Size(39, 20);
+            this.tbEdit.Text = "Edit";
             // 
-            // runToolStripMenuItem
+            // tbRun
             // 
-            this.runToolStripMenuItem.Name = "runToolStripMenuItem";
-            this.runToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.runToolStripMenuItem.Text = "Run";
+            this.tbRun.Name = "tbRun";
+            this.tbRun.Size = new System.Drawing.Size(40, 20);
+            this.tbRun.Text = "Run";
             // 
-            // helpToolStripMenuItem
+            // tbExample
             // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.tbExample.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tbHelloWorld});
+            this.tbExample.Name = "tbExample";
+            this.tbExample.Size = new System.Drawing.Size(69, 20);
+            this.tbExample.Text = "Examples";
+            // 
+            // tbHelloWorld
+            // 
+            this.tbHelloWorld.Name = "tbHelloWorld";
+            this.tbHelloWorld.Size = new System.Drawing.Size(140, 22);
+            this.tbHelloWorld.Text = "Hello Wolrd!";
+            this.tbHelloWorld.Click += new System.EventHandler(this.tbHelloWorld_click);
+            // 
+            // tbHelp
+            // 
+            this.tbHelp.Name = "tbHelp";
+            this.tbHelp.Size = new System.Drawing.Size(44, 20);
+            this.tbHelp.Text = "Help";
             // 
             // groupBox1
             // 
@@ -118,34 +140,74 @@ namespace PL_Proyect
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // button1
+            // outputScreen
             // 
-            this.button1.Location = new System.Drawing.Point(12, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.outputScreen.BackColor = System.Drawing.SystemColors.WindowText;
+            this.outputScreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.outputScreen.EnableAutoDragDrop = true;
+            this.outputScreen.ForeColor = System.Drawing.SystemColors.Window;
+            this.outputScreen.Location = new System.Drawing.Point(0, 420);
+            this.outputScreen.Name = "outputScreen";
+            this.outputScreen.ReadOnly = true;
+            this.outputScreen.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.outputScreen.Size = new System.Drawing.Size(292, 263);
+            this.outputScreen.TabIndex = 4;
+            this.outputScreen.TabStop = false;
+            this.outputScreen.Text = "I wrote this text here\nThe code wrote the text down here:\n ";
+            // 
+            // entryField
+            // 
+            this.entryField.Location = new System.Drawing.Point(0, 391);
+            this.entryField.Name = "entryField";
+            this.entryField.Size = new System.Drawing.Size(239, 23);
+            this.entryField.TabIndex = 5;
+            this.entryField.TextChanged += new System.EventHandler(this.entryField_TextChanged);
+            this.entryField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckEnterKeyPress);
+            // 
+            // codeGoesHere
+            // 
+            this.codeGoesHere.BackColor = System.Drawing.SystemColors.WindowText;
+            this.codeGoesHere.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.codeGoesHere.ForeColor = System.Drawing.SystemColors.Window;
+            this.codeGoesHere.Location = new System.Drawing.Point(599, 24);
+            this.codeGoesHere.Name = "codeGoesHere";
+            this.codeGoesHere.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.codeGoesHere.Size = new System.Drawing.Size(345, 659);
+            this.codeGoesHere.TabIndex = 6;
+            this.codeGoesHere.Text = "";
+            // 
+            // sendButton
+            // 
+            this.sendButton.Location = new System.Drawing.Point(245, 391);
+            this.sendButton.Name = "sendButton";
+            this.sendButton.Size = new System.Drawing.Size(47, 23);
+            this.sendButton.TabIndex = 7;
+            this.sendButton.Text = "Send";
+            this.sendButton.UseVisualStyleBackColor = true;
+            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
             // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(944, 681);
+            this.Controls.Add(this.sendButton);
+            this.Controls.Add(this.codeGoesHere);
+            this.Controls.Add(this.entryField);
+            this.Controls.Add(this.outputScreen);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.mainMenu);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.mainMenu;
             this.Name = "TestForm";
-            this.Text = "TestForm";
+            this.Text = "Name of Program here";
             this.Load += new System.EventHandler(this.TestForm_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.mainMenu.ResumeLayout(false);
+            this.mainMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,17 +215,22 @@ namespace PL_Proyect
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip mainMenu;
+        private System.Windows.Forms.ToolStripMenuItem tbFile;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem runToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tbNew;
+        private System.Windows.Forms.ToolStripMenuItem tbOpen;
+        private System.Windows.Forms.ToolStripMenuItem tbSaveAs;
+        private System.Windows.Forms.ToolStripMenuItem tbEdit;
+        private System.Windows.Forms.ToolStripMenuItem tbRun;
+        private System.Windows.Forms.ToolStripMenuItem tbExample;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox outputScreen;
+        private System.Windows.Forms.TextBox entryField;
+        private System.Windows.Forms.RichTextBox codeGoesHere;
+        private System.Windows.Forms.Button sendButton;
+        private System.Windows.Forms.ToolStripMenuItem tbHelloWorld;
+        private System.Windows.Forms.ToolStripMenuItem tbHelp;
     }
 }
 

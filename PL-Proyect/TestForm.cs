@@ -22,14 +22,36 @@ namespace PL_Proyect
 
         }
 
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        private void entryField_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void tbHelloWorld_click(object sender, EventArgs e)
+        {
+            outputScreen.AppendText(">Hello World\n");
+        }
+
+        private void tbSaveAs_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void sendButton_Click(object sender, EventArgs e)
+        {
+            string userEntry = entryField.Text;
+            entryField.Text = "";
+            outputScreen.AppendText("You said: " + userEntry + "\n");
+        }
+
+        private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                string userEntry = entryField.Text;
+                entryField.Text = "";
+                outputScreen.AppendText("You said: " + userEntry + "\n");
+            }
         }
     }
 }
