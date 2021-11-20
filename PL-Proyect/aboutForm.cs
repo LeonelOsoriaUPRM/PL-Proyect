@@ -15,9 +15,9 @@ namespace PL_Proyect
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void aboutTextBox_TextChanged(object sender, EventArgs e)
         {
-           
+            
         }
     }
 }

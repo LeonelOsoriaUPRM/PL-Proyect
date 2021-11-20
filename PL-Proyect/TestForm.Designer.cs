@@ -46,6 +46,8 @@ namespace PL_Proyect
             this.entryField = new System.Windows.Forms.TextBox();
             this.codeGoesHere = new System.Windows.Forms.RichTextBox();
             this.sendButton = new System.Windows.Forms.Button();
+            this.codeBlockSelector = new System.Windows.Forms.TreeView();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +58,8 @@ namespace PL_Proyect
             this.tbEdit,
             this.tbRun,
             this.tbExample,
-            this.tbHelp});
+            this.tbHelp,
+            this.aboutToolStripMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
             this.mainMenu.Size = new System.Drawing.Size(944, 24);
@@ -162,7 +165,7 @@ namespace PL_Proyect
             this.entryField.Size = new System.Drawing.Size(239, 23);
             this.entryField.TabIndex = 5;
             this.entryField.TextChanged += new System.EventHandler(this.entryField_TextChanged);
-            this.entryField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckEnterKeyPress);
+            this.entryField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
             // 
             // codeGoesHere
             // 
@@ -186,12 +189,29 @@ namespace PL_Proyect
             this.sendButton.UseVisualStyleBackColor = true;
             this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
             // 
+            // codeBlockSelector
+            // 
+            this.codeBlockSelector.BackColor = System.Drawing.SystemColors.WindowText;
+            this.codeBlockSelector.ForeColor = System.Drawing.SystemColors.Window;
+            this.codeBlockSelector.Location = new System.Drawing.Point(0, 27);
+            this.codeBlockSelector.Name = "codeBlockSelector";
+            this.codeBlockSelector.Size = new System.Drawing.Size(292, 358);
+            this.codeBlockSelector.TabIndex = 8;
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(944, 681);
+            this.Controls.Add(this.codeBlockSelector);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.codeGoesHere);
             this.Controls.Add(this.entryField);
@@ -231,6 +251,8 @@ namespace PL_Proyect
         private System.Windows.Forms.Button sendButton;
         private System.Windows.Forms.ToolStripMenuItem tbHelloWorld;
         private System.Windows.Forms.ToolStripMenuItem tbHelp;
+        private System.Windows.Forms.TreeView codeBlockSelector;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

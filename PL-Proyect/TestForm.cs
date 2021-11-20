@@ -50,8 +50,14 @@ namespace PL_Proyect
             {
                 string userEntry = entryField.Text;
                 entryField.Text = "";
-                outputScreen.AppendText("You said: " + userEntry + "\n");
+                outputScreen.AppendText("-" + userEntry + "\n");
             }
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            aboutForm aboutForm = new aboutForm();
+            aboutForm.Show();
         }
     }
 }

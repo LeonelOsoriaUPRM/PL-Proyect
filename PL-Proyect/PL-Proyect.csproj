@@ -11,4 +11,9 @@
     <Folder Include="Media\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Antlr" Version="3.5.0.2" />
+    <PackageReference Include="jacobslusser.ScintillaNET" Version="3.6.3" />
+  </ItemGroup>
+
 </Project>

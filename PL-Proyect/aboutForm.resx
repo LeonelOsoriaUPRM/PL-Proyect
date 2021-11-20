@@ -67,9 +67,20 @@ Rose M. Sanchez Irizzary
 
 Credit to:
 (Insert repos where code/inspiration was taken)
-for: (insert what code or inspiration was taken)
+For: (insert what code or inspiration was taken)
+
 https://github.com/Asendo316/Rex-IDE
-For providing: Inspiration in terms of layout
+For: Inspiration in terms of layout
+
+https://www.youtube.com/watch?v=v3UyE0x1Sbc
+For: Showing syntax &amp; introducing us to ScintillaNET
+
+https://github.com/jacobslusser/ScintillaNET
+For: Having functions that proved to be invaluable 
+
+https://github.com/antlr/antlrcs
+For: Having functions that proved to be invaluable
+
 All Stack Overflow users answering questions</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
