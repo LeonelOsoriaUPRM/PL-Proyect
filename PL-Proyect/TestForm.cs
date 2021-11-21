@@ -59,5 +59,10 @@ namespace PL_Proyect
             aboutForm aboutForm = new aboutForm();
             aboutForm.Show();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

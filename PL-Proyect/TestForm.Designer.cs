@@ -41,13 +41,14 @@ namespace PL_Proyect
             this.tbExample = new System.Windows.Forms.ToolStripMenuItem();
             this.tbHelloWorld = new System.Windows.Forms.ToolStripMenuItem();
             this.tbHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.outputScreen = new System.Windows.Forms.RichTextBox();
             this.entryField = new System.Windows.Forms.TextBox();
-            this.codeGoesHere = new System.Windows.Forms.RichTextBox();
             this.sendButton = new System.Windows.Forms.Button();
-            this.codeBlockSelector = new System.Windows.Forms.TreeView();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.codeInTextPanel = new System.Windows.Forms.RichTextBox();
+            this.codeBlockPanel = new System.Windows.Forms.Panel();
+            this.codeBlockSelectionTree = new System.Windows.Forms.TreeView();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,11 +61,8 @@ namespace PL_Proyect
             this.tbExample,
             this.tbHelp,
             this.aboutToolStripMenuItem});
-            this.mainMenu.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.mainMenu, "mainMenu");
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(944, 24);
-            this.mainMenu.TabIndex = 0;
-            this.mainMenu.Text = "menuStrip1";
             // 
             // tbFile
             // 
@@ -74,157 +72,129 @@ namespace PL_Proyect
             this.toolStripSeparator1,
             this.tbSaveAs});
             this.tbFile.Name = "tbFile";
-            this.tbFile.Size = new System.Drawing.Size(37, 20);
-            this.tbFile.Text = "File";
+            resources.ApplyResources(this.tbFile, "tbFile");
             // 
             // tbNew
             // 
             this.tbNew.Name = "tbNew";
-            this.tbNew.Size = new System.Drawing.Size(111, 22);
-            this.tbNew.Text = "New";
+            resources.ApplyResources(this.tbNew, "tbNew");
             // 
             // tbOpen
             // 
             this.tbOpen.Name = "tbOpen";
-            this.tbOpen.Size = new System.Drawing.Size(111, 22);
-            this.tbOpen.Text = "Open";
+            resources.ApplyResources(this.tbOpen, "tbOpen");
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(108, 6);
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // tbSaveAs
             // 
             this.tbSaveAs.Name = "tbSaveAs";
-            this.tbSaveAs.Size = new System.Drawing.Size(111, 22);
-            this.tbSaveAs.Text = "SaveAs";
+            resources.ApplyResources(this.tbSaveAs, "tbSaveAs");
             this.tbSaveAs.Click += new System.EventHandler(this.tbSaveAs_Click);
             // 
             // tbEdit
             // 
             this.tbEdit.Name = "tbEdit";
-            this.tbEdit.Size = new System.Drawing.Size(39, 20);
-            this.tbEdit.Text = "Edit";
+            resources.ApplyResources(this.tbEdit, "tbEdit");
             // 
             // tbRun
             // 
             this.tbRun.Name = "tbRun";
-            this.tbRun.Size = new System.Drawing.Size(40, 20);
-            this.tbRun.Text = "Run";
+            resources.ApplyResources(this.tbRun, "tbRun");
             // 
             // tbExample
             // 
             this.tbExample.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tbHelloWorld});
             this.tbExample.Name = "tbExample";
-            this.tbExample.Size = new System.Drawing.Size(69, 20);
-            this.tbExample.Text = "Examples";
+            resources.ApplyResources(this.tbExample, "tbExample");
             // 
             // tbHelloWorld
             // 
             this.tbHelloWorld.Name = "tbHelloWorld";
-            this.tbHelloWorld.Size = new System.Drawing.Size(140, 22);
-            this.tbHelloWorld.Text = "Hello Wolrd!";
+            resources.ApplyResources(this.tbHelloWorld, "tbHelloWorld");
             this.tbHelloWorld.Click += new System.EventHandler(this.tbHelloWorld_click);
             // 
             // tbHelp
             // 
             this.tbHelp.Name = "tbHelp";
-            this.tbHelp.Size = new System.Drawing.Size(44, 20);
-            this.tbHelp.Text = "Help";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(-349, -139);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // outputScreen
-            // 
-            this.outputScreen.BackColor = System.Drawing.SystemColors.WindowText;
-            this.outputScreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.outputScreen.EnableAutoDragDrop = true;
-            this.outputScreen.ForeColor = System.Drawing.SystemColors.Window;
-            this.outputScreen.Location = new System.Drawing.Point(0, 420);
-            this.outputScreen.Name = "outputScreen";
-            this.outputScreen.ReadOnly = true;
-            this.outputScreen.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.outputScreen.Size = new System.Drawing.Size(292, 263);
-            this.outputScreen.TabIndex = 4;
-            this.outputScreen.TabStop = false;
-            this.outputScreen.Text = "I wrote this text here\nThe code wrote the text down here:\n ";
-            // 
-            // entryField
-            // 
-            this.entryField.Location = new System.Drawing.Point(0, 391);
-            this.entryField.Name = "entryField";
-            this.entryField.Size = new System.Drawing.Size(239, 23);
-            this.entryField.TabIndex = 5;
-            this.entryField.TextChanged += new System.EventHandler(this.entryField_TextChanged);
-            this.entryField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
-            // 
-            // codeGoesHere
-            // 
-            this.codeGoesHere.BackColor = System.Drawing.SystemColors.WindowText;
-            this.codeGoesHere.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.codeGoesHere.ForeColor = System.Drawing.SystemColors.Window;
-            this.codeGoesHere.Location = new System.Drawing.Point(599, 24);
-            this.codeGoesHere.Name = "codeGoesHere";
-            this.codeGoesHere.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.codeGoesHere.Size = new System.Drawing.Size(345, 659);
-            this.codeGoesHere.TabIndex = 6;
-            this.codeGoesHere.Text = "";
-            // 
-            // sendButton
-            // 
-            this.sendButton.Location = new System.Drawing.Point(245, 391);
-            this.sendButton.Name = "sendButton";
-            this.sendButton.Size = new System.Drawing.Size(47, 23);
-            this.sendButton.TabIndex = 7;
-            this.sendButton.Text = "Send";
-            this.sendButton.UseVisualStyleBackColor = true;
-            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
-            // 
-            // codeBlockSelector
-            // 
-            this.codeBlockSelector.BackColor = System.Drawing.SystemColors.WindowText;
-            this.codeBlockSelector.ForeColor = System.Drawing.SystemColors.Window;
-            this.codeBlockSelector.Location = new System.Drawing.Point(0, 27);
-            this.codeBlockSelector.Name = "codeBlockSelector";
-            this.codeBlockSelector.Size = new System.Drawing.Size(292, 358);
-            this.codeBlockSelector.TabIndex = 8;
+            resources.ApplyResources(this.tbHelp, "tbHelp");
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // groupBox1
+            // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // outputScreen
+            // 
+            resources.ApplyResources(this.outputScreen, "outputScreen");
+            this.outputScreen.BackColor = System.Drawing.SystemColors.WindowText;
+            this.outputScreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.outputScreen.EnableAutoDragDrop = true;
+            this.outputScreen.ForeColor = System.Drawing.SystemColors.Window;
+            this.outputScreen.Name = "outputScreen";
+            this.outputScreen.ReadOnly = true;
+            this.outputScreen.TabStop = false;
+            // 
+            // entryField
+            // 
+            resources.ApplyResources(this.entryField, "entryField");
+            this.entryField.Name = "entryField";
+            this.entryField.TextChanged += new System.EventHandler(this.entryField_TextChanged);
+            this.entryField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
+            // 
+            // sendButton
+            // 
+            resources.ApplyResources(this.sendButton, "sendButton");
+            this.sendButton.Name = "sendButton";
+            this.sendButton.UseVisualStyleBackColor = true;
+            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
+            // 
+            // codeInTextPanel
+            // 
+            resources.ApplyResources(this.codeInTextPanel, "codeInTextPanel");
+            this.codeInTextPanel.BackColor = System.Drawing.SystemColors.WindowText;
+            this.codeInTextPanel.ForeColor = System.Drawing.SystemColors.Window;
+            this.codeInTextPanel.Name = "codeInTextPanel";
+            this.codeInTextPanel.ReadOnly = true;
+            // 
+            // codeBlockPanel
+            // 
+            resources.ApplyResources(this.codeBlockPanel, "codeBlockPanel");
+            this.codeBlockPanel.Name = "codeBlockPanel";
+            // 
+            // codeBlockSelectionTree
+            // 
+            resources.ApplyResources(this.codeBlockSelectionTree, "codeBlockSelectionTree");
+            this.codeBlockSelectionTree.Name = "codeBlockSelectionTree";
             // 
             // TestForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(944, 681);
-            this.Controls.Add(this.codeBlockSelector);
+            this.Controls.Add(this.codeBlockSelectionTree);
+            this.Controls.Add(this.codeBlockPanel);
+            this.Controls.Add(this.codeInTextPanel);
             this.Controls.Add(this.sendButton);
-            this.Controls.Add(this.codeGoesHere);
             this.Controls.Add(this.entryField);
             this.Controls.Add(this.outputScreen);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mainMenu);
-            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.HelpButton = true;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mainMenu;
             this.Name = "TestForm";
-            this.Text = "Name of Program here";
             this.Load += new System.EventHandler(this.TestForm_Load);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
@@ -247,12 +217,13 @@ namespace PL_Proyect
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.RichTextBox outputScreen;
         private System.Windows.Forms.TextBox entryField;
-        private System.Windows.Forms.RichTextBox codeGoesHere;
         private System.Windows.Forms.Button sendButton;
         private System.Windows.Forms.ToolStripMenuItem tbHelloWorld;
         private System.Windows.Forms.ToolStripMenuItem tbHelp;
-        private System.Windows.Forms.TreeView codeBlockSelector;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.RichTextBox codeInTextPanel;
+        private System.Windows.Forms.Panel codeBlockPanel;
+        private System.Windows.Forms.TreeView codeBlockSelectionTree;
     }
 }
 
