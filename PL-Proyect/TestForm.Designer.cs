@@ -54,6 +54,7 @@ namespace PL_Proyect
             // 
             // mainMenu
             // 
+            this.mainMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tbFile,
             this.tbEdit,
@@ -122,6 +123,7 @@ namespace PL_Proyect
             // 
             this.tbHelp.Name = "tbHelp";
             resources.ApplyResources(this.tbHelp, "tbHelp");
+            this.tbHelp.Click += new System.EventHandler(this.tbHelp_Click);
             // 
             // aboutToolStripMenuItem
             // 
