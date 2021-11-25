@@ -194,7 +194,6 @@ namespace PL_Proyect
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mainMenu);
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.mainMenu;
             this.Name = "TestForm";
             this.Load += new System.EventHandler(this.TestForm_Load);
