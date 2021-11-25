@@ -41,7 +41,7 @@ namespace PL_Proyect
         {
             string userEntry = entryField.Text;
             entryField.Text = "";
-            outputScreen.AppendText("You said: " + userEntry + "\n");
+            outputScreen.AppendText("-" + userEntry + "\n");
         }
 
         private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
@@ -61,6 +61,11 @@ namespace PL_Proyect
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbHelp_Click(object sender, EventArgs e)
         {
 
         }
