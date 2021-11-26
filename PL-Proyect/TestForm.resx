@@ -193,7 +193,7 @@
     <value>Bottom, Left</value>
   </data>
   <data name="outputScreen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 490</value>
+    <value>0, 477</value>
   </data>
   <data name="outputScreen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -202,14 +202,13 @@
     <value>ForcedVertical</value>
   </data>
   <data name="outputScreen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 436</value>
+    <value>415, 449</value>
   </data>
   <data name="outputScreen.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="outputScreen.Text" xml:space="preserve">
-    <value>I wrote this text here
-The code wrote the text down here:</value>
+    <value />
   </data>
   <data name="&gt;&gt;outputScreen.Name" xml:space="preserve">
     <value>outputScreen</value>
@@ -227,7 +226,7 @@ The code wrote the text down here:</value>
     <value>Bottom, Left</value>
   </data>
   <data name="entryField.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 438</value>
+    <value>0, 436</value>
   </data>
   <data name="entryField.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -237,9 +236,6 @@ The code wrote the text down here:</value>
   </data>
   <data name="entryField.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="entryField.Text" xml:space="preserve">
-    <value>I'm really struggling right now</value>
   </data>
   <data name="&gt;&gt;entryField.Name" xml:space="preserve">
     <value>entryField</value>
@@ -257,13 +253,13 @@ The code wrote the text down here:</value>
     <value>Bottom, Left</value>
   </data>
   <data name="sendButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 438</value>
+    <value>348, 436</value>
   </data>
   <data name="sendButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
   <data name="sendButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 38</value>
+    <value>67, 31</value>
   </data>
   <data name="sendButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>

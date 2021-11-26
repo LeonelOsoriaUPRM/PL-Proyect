@@ -41,18 +41,14 @@ namespace PL_Proyect
 
         private void sendButton_Click(object sender, EventArgs e)
         {
-            string userEntry = entryField.Text;
-            entryField.Text = "";
-            outputScreen.AppendText("-" + userEntry + "\n");
+            UserWrite(entryField.Text);
         }
 
         private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Return)
             {
-                string userEntry = entryField.Text;
-                entryField.Text = "";
-                outputScreen.AppendText("-" + userEntry + "\n");
+                UserWrite(entryField.Text);
             }
         }
 
@@ -86,13 +82,20 @@ namespace PL_Proyect
         {
             outputScreen.SelectionColor = Color.Green;
             s = ">" + s;
-            
             outputScreen.AppendText(s+"\n");
         }
 
         private void defaultCodeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t\n\t\t}\n\t}\n}";
+        }
+
+        private void UserWrite(string s)
+        {
+            outputScreen.SelectionColor = Color.Red;
+            s = "-" + s;
+            outputScreen.AppendText(s + "\n");
+            entryField.Text = "";
         }
     }
 }
