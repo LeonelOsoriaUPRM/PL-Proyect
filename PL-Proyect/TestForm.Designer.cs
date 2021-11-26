@@ -37,6 +37,7 @@ namespace PL_Proyect
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tbSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.tbEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.defaultCode = new System.Windows.Forms.ToolStripMenuItem();
             this.tbRun = new System.Windows.Forms.ToolStripMenuItem();
             this.tbExample = new System.Windows.Forms.ToolStripMenuItem();
             this.tbHelloWorld = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,6 @@ namespace PL_Proyect
             this.entryField = new System.Windows.Forms.TextBox();
             this.sendButton = new System.Windows.Forms.Button();
             this.codeInTextPanel = new System.Windows.Forms.RichTextBox();
-            this.codeBlockPanel = new System.Windows.Forms.Panel();
             this.codeBlockSelectionTree = new System.Windows.Forms.TreeView();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
@@ -98,8 +98,16 @@ namespace PL_Proyect
             // 
             // tbEdit
             // 
+            this.tbEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.defaultCode});
             this.tbEdit.Name = "tbEdit";
             resources.ApplyResources(this.tbEdit, "tbEdit");
+            // 
+            // defaultCode
+            // 
+            this.defaultCode.Name = "defaultCode";
+            resources.ApplyResources(this.defaultCode, "defaultCode");
+            this.defaultCode.Click += new System.EventHandler(this.defaultCodeToolStripMenuItem_Click);
             // 
             // tbRun
             // 
@@ -136,6 +144,7 @@ namespace PL_Proyect
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // outputScreen
             // 
@@ -151,6 +160,7 @@ namespace PL_Proyect
             // entryField
             // 
             resources.ApplyResources(this.entryField, "entryField");
+            this.entryField.ForeColor = System.Drawing.Color.Red;
             this.entryField.Name = "entryField";
             this.entryField.TextChanged += new System.EventHandler(this.entryField_TextChanged);
             this.entryField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
@@ -168,12 +178,7 @@ namespace PL_Proyect
             this.codeInTextPanel.BackColor = System.Drawing.SystemColors.WindowText;
             this.codeInTextPanel.ForeColor = System.Drawing.SystemColors.Window;
             this.codeInTextPanel.Name = "codeInTextPanel";
-            this.codeInTextPanel.ReadOnly = true;
-            // 
-            // codeBlockPanel
-            // 
-            resources.ApplyResources(this.codeBlockPanel, "codeBlockPanel");
-            this.codeBlockPanel.Name = "codeBlockPanel";
+            this.codeInTextPanel.TextChanged += new System.EventHandler(this.codeInTextPanel_TextChanged);
             // 
             // codeBlockSelectionTree
             // 
@@ -186,7 +191,6 @@ namespace PL_Proyect
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.Controls.Add(this.codeBlockSelectionTree);
-            this.Controls.Add(this.codeBlockPanel);
             this.Controls.Add(this.codeInTextPanel);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.entryField);
@@ -223,8 +227,8 @@ namespace PL_Proyect
         private System.Windows.Forms.ToolStripMenuItem tbHelp;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.RichTextBox codeInTextPanel;
-        private System.Windows.Forms.Panel codeBlockPanel;
         private System.Windows.Forms.TreeView codeBlockSelectionTree;
+        private System.Windows.Forms.ToolStripMenuItem defaultCode;
     }
 }
 

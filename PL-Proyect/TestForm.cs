@@ -29,7 +29,9 @@ namespace PL_Proyect
 
         private void tbHelloWorld_click(object sender, EventArgs e)
         {
-            outputScreen.AppendText(">Hello World\n");
+
+            //outputScreen.AppendText(">Hello World\n");
+            ConsoleWrite("Hello World");
         }
 
         private void tbSaveAs_Click(object sender, EventArgs e)
@@ -68,6 +70,29 @@ namespace PL_Proyect
         private void tbHelp_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void codeInTextPanel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConsoleWrite(string s)
+        {
+            outputScreen.SelectionColor = Color.Green;
+            s = ">" + s;
+            
+            outputScreen.AppendText(s+"\n");
+        }
+
+        private void defaultCodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t\n\t\t}\n\t}\n}";
         }
     }
 }
