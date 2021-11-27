@@ -29,9 +29,10 @@ namespace PL_Proyect
 
         private void tbHelloWorld_click(object sender, EventArgs e)
         {
-
             //outputScreen.AppendText(">Hello World\n");
             ConsoleWrite("Hello World");
+            codeInTextPanel.Text = codeInTextPanel.Text.Insert(133, "ConsoleWrite(\"Hello World\");");
+            //this method is hell and should be changed as soon as possible
         }
 
         private void tbSaveAs_Click(object sender, EventArgs e)
@@ -78,16 +79,18 @@ namespace PL_Proyect
 
         }
 
+        private void defaultCodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t}\n\t}\n}";
+        }
+
+        //Custom functions start
+
         private void ConsoleWrite(string s)
         {
             outputScreen.SelectionColor = Color.Green;
             s = ">" + s;
             outputScreen.AppendText(s+"\n");
-        }
-
-        private void defaultCodeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t\n\t\t}\n\t}\n}";
         }
 
         private void UserWrite(string s)
@@ -96,6 +99,18 @@ namespace PL_Proyect
             s = "-" + s;
             outputScreen.AppendText(s + "\n");
             entryField.Text = "";
+        }
+
+        //Custom functions end
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
