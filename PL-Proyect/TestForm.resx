@@ -61,75 +61,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tbNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 34</value>
-  </data>
-  <data name="tbNew.Text" xml:space="preserve">
-    <value>New</value>
-  </data>
-  <data name="tbOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 34</value>
-  </data>
-  <data name="tbOpen.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 6</value>
-  </data>
-  <data name="tbSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 34</value>
-  </data>
-  <data name="tbSaveAs.Text" xml:space="preserve">
-    <value>SaveAs</value>
-  </data>
-  <data name="tbFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 29</value>
-  </data>
-  <data name="tbFile.Text" xml:space="preserve">
-    <value>File</value>
-  </data>
-  <data name="defaultCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 34</value>
-  </data>
-  <data name="defaultCode.Text" xml:space="preserve">
-    <value>Default Code</value>
-  </data>
-  <data name="tbEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 29</value>
-  </data>
-  <data name="tbEdit.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="tbRun.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="tbRun.Text" xml:space="preserve">
-    <value>Run</value>
-  </data>
-  <data name="tbHelloWorld.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 34</value>
-  </data>
-  <data name="tbHelloWorld.Text" xml:space="preserve">
-    <value>Hello Wolrd!</value>
-  </data>
-  <data name="tbExample.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 29</value>
-  </data>
-  <data name="tbExample.Text" xml:space="preserve">
-    <value>Examples</value>
-  </data>
-  <data name="tbHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 29</value>
-  </data>
-  <data name="tbHelp.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 29</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
   <data name="mainMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -158,6 +89,75 @@
   </data>
   <data name="&gt;&gt;mainMenu.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="tbFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 29</value>
+  </data>
+  <data name="tbFile.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="tbNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 34</value>
+  </data>
+  <data name="tbNew.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="tbOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 34</value>
+  </data>
+  <data name="tbOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 6</value>
+  </data>
+  <data name="tbSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 34</value>
+  </data>
+  <data name="tbSaveAs.Text" xml:space="preserve">
+    <value>SaveAs</value>
+  </data>
+  <data name="tbEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 29</value>
+  </data>
+  <data name="tbEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="defaultCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 34</value>
+  </data>
+  <data name="defaultCode.Text" xml:space="preserve">
+    <value>Default Code</value>
+  </data>
+  <data name="tbRun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="tbRun.Text" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="tbExample.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 29</value>
+  </data>
+  <data name="tbExample.Text" xml:space="preserve">
+    <value>Examples</value>
+  </data>
+  <data name="tbHelloWorld.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 34</value>
+  </data>
+  <data name="tbHelloWorld.Text" xml:space="preserve">
+    <value>Hello Wolrd!</value>
+  </data>
+  <data name="tbHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 29</value>
+  </data>
+  <data name="tbHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 29</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-499, -232</value>
@@ -286,7 +286,7 @@
     <value>NoControl</value>
   </data>
   <data name="codeInTextPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 38</value>
+    <value>416, 38</value>
   </data>
   <data name="codeInTextPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -327,328 +327,328 @@ namespace LearningSpace
   <data name="flowLayoutPanel1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="printTextBt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="printTextBt.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="printTextBt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="printTextBt.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>button1</value>
+  <data name="printTextBt.Text" xml:space="preserve">
+    <value>Print Text</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;printTextBt.Name" xml:space="preserve">
+    <value>printTextBt</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;printTextBt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;printTextBt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;printTextBt.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="printValuebtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="printValuebtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 3</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="printValuebtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="printValuebtn.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>button2</value>
+  <data name="printValuebtn.Text" xml:space="preserve">
+    <value>Print Value</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;printValuebtn.Name" xml:space="preserve">
+    <value>printValuebtn</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;printValuebtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;printValuebtn.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;printValuebtn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="variableSetbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="variableSetbt.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 95</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="variableSetbt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="variableSetbt.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>button3</value>
+  <data name="variableSetbt.Text" xml:space="preserve">
+    <value>Variable Set</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;variableSetbt.Name" xml:space="preserve">
+    <value>variableSetbt</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;variableSetbt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;variableSetbt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;variableSetbt.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="mathbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="mathbt.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 95</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="mathbt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="mathbt.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>button4</value>
+  <data name="mathbt.Text" xml:space="preserve">
+    <value>Math</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;mathbt.Name" xml:space="preserve">
+    <value>mathbt</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;mathbt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;mathbt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;mathbt.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="ifbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ifbt.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 187</value>
   </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ifbt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+  <data name="ifbt.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="button5.Text" xml:space="preserve">
-    <value>button5</value>
+  <data name="ifbt.Text" xml:space="preserve">
+    <value>If</value>
   </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
+  <data name="&gt;&gt;ifbt.Name" xml:space="preserve">
+    <value>ifbt</value>
   </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+  <data name="&gt;&gt;ifbt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ifbt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ifbt.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="elsebt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="elsebt.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 187</value>
   </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="elsebt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+  <data name="elsebt.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="button6.Text" xml:space="preserve">
-    <value>button6</value>
+  <data name="elsebt.Text" xml:space="preserve">
+    <value>Else</value>
   </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
+  <data name="&gt;&gt;elsebt.Name" xml:space="preserve">
+    <value>elsebt</value>
   </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+  <data name="&gt;&gt;elsebt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;elsebt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;elsebt.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="whilebt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="whilebt.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 279</value>
   </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="whilebt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+  <data name="whilebt.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="button7.Text" xml:space="preserve">
-    <value>button7</value>
+  <data name="whilebt.Text" xml:space="preserve">
+    <value>While Loop</value>
   </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
+  <data name="&gt;&gt;whilebt.Name" xml:space="preserve">
+    <value>whilebt</value>
   </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+  <data name="&gt;&gt;whilebt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;whilebt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;whilebt.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="forbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="forbt.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 279</value>
   </data>
-  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="forbt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+  <data name="forbt.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="button8.Text" xml:space="preserve">
-    <value>button8</value>
+  <data name="forbt.Text" xml:space="preserve">
+    <value>For Loop</value>
   </data>
-  <data name="&gt;&gt;button8.Name" xml:space="preserve">
-    <value>button8</value>
+  <data name="&gt;&gt;forbt.Name" xml:space="preserve">
+    <value>forbt</value>
   </data>
-  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+  <data name="&gt;&gt;forbt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;forbt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;forbt.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="switchbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="switchbt.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 371</value>
   </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="switchbt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+  <data name="switchbt.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="button9.Text" xml:space="preserve">
-    <value>button9</value>
+  <data name="switchbt.Text" xml:space="preserve">
+    <value>Switch</value>
   </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
+  <data name="&gt;&gt;switchbt.Name" xml:space="preserve">
+    <value>switchbt</value>
   </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+  <data name="&gt;&gt;switchbt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;switchbt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;switchbt.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="button10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="casebt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="casebt.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 371</value>
   </data>
-  <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="casebt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button10.TabIndex" type="System.Int32, mscorlib">
+  <data name="casebt.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="button10.Text" xml:space="preserve">
-    <value>button10</value>
+  <data name="casebt.Text" xml:space="preserve">
+    <value>Case</value>
   </data>
-  <data name="&gt;&gt;button10.Name" xml:space="preserve">
-    <value>button10</value>
+  <data name="&gt;&gt;casebt.Name" xml:space="preserve">
+    <value>casebt</value>
   </data>
-  <data name="&gt;&gt;button10.Type" xml:space="preserve">
+  <data name="&gt;&gt;casebt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button10.Parent" xml:space="preserve">
+  <data name="&gt;&gt;casebt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;casebt.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="button11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="breakbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="breakbt.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 463</value>
   </data>
-  <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="breakbt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button11.TabIndex" type="System.Int32, mscorlib">
+  <data name="breakbt.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="button11.Text" xml:space="preserve">
-    <value>button11</value>
+  <data name="breakbt.Text" xml:space="preserve">
+    <value>Break</value>
   </data>
-  <data name="&gt;&gt;button11.Name" xml:space="preserve">
-    <value>button11</value>
+  <data name="&gt;&gt;breakbt.Name" xml:space="preserve">
+    <value>breakbt</value>
   </data>
-  <data name="&gt;&gt;button11.Type" xml:space="preserve">
+  <data name="&gt;&gt;breakbt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button11.Parent" xml:space="preserve">
+  <data name="&gt;&gt;breakbt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;breakbt.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="button12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn12.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 463</value>
   </data>
-  <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn12.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button12.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn12.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="button12.Text" xml:space="preserve">
-    <value>button12</value>
+  <data name="btn12.Text" xml:space="preserve">
+    <value>btn 12</value>
   </data>
-  <data name="&gt;&gt;button12.Name" xml:space="preserve">
-    <value>button12</value>
+  <data name="&gt;&gt;btn12.Name" xml:space="preserve">
+    <value>btn12</value>
   </data>
-  <data name="&gt;&gt;button12.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button12.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn12.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn12.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
   <data name="button13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -664,7 +664,7 @@ namespace LearningSpace
     <value>24</value>
   </data>
   <data name="button13.Text" xml:space="preserve">
-    <value>button13</value>
+    <value>Function</value>
   </data>
   <data name="&gt;&gt;button13.Name" xml:space="preserve">
     <value>button13</value>
@@ -678,31 +678,31 @@ namespace LearningSpace
   <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="button14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="returnbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="returnbt.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 555</value>
   </data>
-  <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="returnbt.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 86</value>
   </data>
-  <data name="button14.TabIndex" type="System.Int32, mscorlib">
+  <data name="returnbt.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="button14.Text" xml:space="preserve">
-    <value>button14</value>
+  <data name="returnbt.Text" xml:space="preserve">
+    <value>Return</value>
   </data>
-  <data name="&gt;&gt;button14.Name" xml:space="preserve">
-    <value>button14</value>
+  <data name="&gt;&gt;returnbt.Name" xml:space="preserve">
+    <value>returnbt</value>
   </data>
-  <data name="&gt;&gt;button14.Type" xml:space="preserve">
+  <data name="&gt;&gt;returnbt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button14.Parent" xml:space="preserve">
+  <data name="&gt;&gt;returnbt.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;returnbt.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
   <data name="button15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
