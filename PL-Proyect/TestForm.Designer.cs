@@ -38,6 +38,9 @@ namespace PL_Proyect
             this.tbSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.tbEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.defaultCode = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbRun = new System.Windows.Forms.ToolStripMenuItem();
             this.tbExample = new System.Windows.Forms.ToolStripMenuItem();
             this.tbHelloWorld = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,8 +51,23 @@ namespace PL_Proyect
             this.entryField = new System.Windows.Forms.TextBox();
             this.sendButton = new System.Windows.Forms.Button();
             this.codeInTextPanel = new System.Windows.Forms.RichTextBox();
-            this.codeBlockSelectionTree = new System.Windows.Forms.TreeView();
+            this.returnbt = new System.Windows.Forms.Button();
+            this.functionbt = new System.Windows.Forms.Button();
+            this.btn12 = new System.Windows.Forms.Button();
+            this.breakbt = new System.Windows.Forms.Button();
+            this.casebt = new System.Windows.Forms.Button();
+            this.switchbt = new System.Windows.Forms.Button();
+            this.forbt = new System.Windows.Forms.Button();
+            this.whilebt = new System.Windows.Forms.Button();
+            this.elsebt = new System.Windows.Forms.Button();
+            this.ifbt = new System.Windows.Forms.Button();
+            this.mathbt = new System.Windows.Forms.Button();
+            this.variableSetbt = new System.Windows.Forms.Button();
+            this.printValuebtn = new System.Windows.Forms.Button();
+            this.printTextBt = new System.Windows.Forms.Button();
+            this.buttonPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.mainMenu.SuspendLayout();
+            this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainMenu
@@ -99,7 +117,10 @@ namespace PL_Proyect
             // tbEdit
             // 
             this.tbEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.defaultCode});
+            this.defaultCode,
+            this.toolStripSeparator2,
+            this.undoToolStripMenuItem,
+            this.redoToolStripMenuItem});
             this.tbEdit.Name = "tbEdit";
             resources.ApplyResources(this.tbEdit, "tbEdit");
             // 
@@ -109,10 +130,28 @@ namespace PL_Proyect
             resources.ApplyResources(this.defaultCode, "defaultCode");
             this.defaultCode.Click += new System.EventHandler(this.defaultCodeToolStripMenuItem_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            resources.ApplyResources(this.undoToolStripMenuItem, "undoToolStripMenuItem");
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            resources.ApplyResources(this.redoToolStripMenuItem, "redoToolStripMenuItem");
+            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
+            // 
             // tbRun
             // 
             this.tbRun.Name = "tbRun";
             resources.ApplyResources(this.tbRun, "tbRun");
+            this.tbRun.Click += new System.EventHandler(this.tbRun_Click);
             // 
             // tbExample
             // 
@@ -150,7 +189,7 @@ namespace PL_Proyect
             // 
             resources.ApplyResources(this.outputScreen, "outputScreen");
             this.outputScreen.BackColor = System.Drawing.SystemColors.WindowText;
-            this.outputScreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.outputScreen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.outputScreen.EnableAutoDragDrop = true;
             this.outputScreen.ForeColor = System.Drawing.SystemColors.Window;
             this.outputScreen.Name = "outputScreen";
@@ -174,35 +213,153 @@ namespace PL_Proyect
             // 
             // codeInTextPanel
             // 
+            this.codeInTextPanel.AcceptsTab = true;
             resources.ApplyResources(this.codeInTextPanel, "codeInTextPanel");
+            this.codeInTextPanel.AutoWordSelection = true;
             this.codeInTextPanel.BackColor = System.Drawing.SystemColors.WindowText;
+            this.codeInTextPanel.EnableAutoDragDrop = true;
             this.codeInTextPanel.ForeColor = System.Drawing.SystemColors.Window;
             this.codeInTextPanel.Name = "codeInTextPanel";
+            this.codeInTextPanel.ShowSelectionMargin = true;
             this.codeInTextPanel.TextChanged += new System.EventHandler(this.codeInTextPanel_TextChanged);
             // 
-            // codeBlockSelectionTree
+            // returnbt
             // 
-            resources.ApplyResources(this.codeBlockSelectionTree, "codeBlockSelectionTree");
-            this.codeBlockSelectionTree.Name = "codeBlockSelectionTree";
+            resources.ApplyResources(this.returnbt, "returnbt");
+            this.returnbt.Name = "returnbt";
+            this.returnbt.UseVisualStyleBackColor = true;
+            this.returnbt.Click += new System.EventHandler(this.returnbt_Click);
+            // 
+            // functionbt
+            // 
+            resources.ApplyResources(this.functionbt, "functionbt");
+            this.functionbt.Name = "functionbt";
+            this.functionbt.UseVisualStyleBackColor = true;
+            this.functionbt.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // btn12
+            // 
+            resources.ApplyResources(this.btn12, "btn12");
+            this.btn12.Name = "btn12";
+            this.btn12.UseVisualStyleBackColor = true;
+            this.btn12.Click += new System.EventHandler(this.btn12_Click);
+            // 
+            // breakbt
+            // 
+            resources.ApplyResources(this.breakbt, "breakbt");
+            this.breakbt.Name = "breakbt";
+            this.breakbt.UseVisualStyleBackColor = true;
+            this.breakbt.Click += new System.EventHandler(this.breakbt_Click);
+            // 
+            // casebt
+            // 
+            resources.ApplyResources(this.casebt, "casebt");
+            this.casebt.Name = "casebt";
+            this.casebt.UseVisualStyleBackColor = true;
+            this.casebt.Click += new System.EventHandler(this.casebt_Click);
+            // 
+            // switchbt
+            // 
+            resources.ApplyResources(this.switchbt, "switchbt");
+            this.switchbt.Name = "switchbt";
+            this.switchbt.UseVisualStyleBackColor = true;
+            this.switchbt.Click += new System.EventHandler(this.switchbt_Click);
+            // 
+            // forbt
+            // 
+            resources.ApplyResources(this.forbt, "forbt");
+            this.forbt.Name = "forbt";
+            this.forbt.UseVisualStyleBackColor = true;
+            this.forbt.Click += new System.EventHandler(this.forbt_Click);
+            // 
+            // whilebt
+            // 
+            resources.ApplyResources(this.whilebt, "whilebt");
+            this.whilebt.Name = "whilebt";
+            this.whilebt.UseVisualStyleBackColor = true;
+            this.whilebt.Click += new System.EventHandler(this.whilebt_Click);
+            // 
+            // elsebt
+            // 
+            resources.ApplyResources(this.elsebt, "elsebt");
+            this.elsebt.Name = "elsebt";
+            this.elsebt.UseVisualStyleBackColor = true;
+            this.elsebt.Click += new System.EventHandler(this.elsebt_Click);
+            // 
+            // ifbt
+            // 
+            resources.ApplyResources(this.ifbt, "ifbt");
+            this.ifbt.Name = "ifbt";
+            this.ifbt.UseVisualStyleBackColor = true;
+            this.ifbt.Click += new System.EventHandler(this.ifbt_Click);
+            // 
+            // mathbt
+            // 
+            resources.ApplyResources(this.mathbt, "mathbt");
+            this.mathbt.Name = "mathbt";
+            this.mathbt.UseVisualStyleBackColor = true;
+            this.mathbt.Click += new System.EventHandler(this.mathbt_Click);
+            // 
+            // variableSetbt
+            // 
+            resources.ApplyResources(this.variableSetbt, "variableSetbt");
+            this.variableSetbt.Name = "variableSetbt";
+            this.variableSetbt.UseVisualStyleBackColor = true;
+            this.variableSetbt.Click += new System.EventHandler(this.variableSetbt_Click);
+            // 
+            // printValuebtn
+            // 
+            resources.ApplyResources(this.printValuebtn, "printValuebtn");
+            this.printValuebtn.Name = "printValuebtn";
+            this.printValuebtn.UseVisualStyleBackColor = true;
+            this.printValuebtn.Click += new System.EventHandler(this.printValuebtn_Click);
+            // 
+            // printTextBt
+            // 
+            resources.ApplyResources(this.printTextBt, "printTextBt");
+            this.printTextBt.Name = "printTextBt";
+            this.printTextBt.UseVisualStyleBackColor = true;
+            this.printTextBt.Click += new System.EventHandler(this.printTextBt_Click);
+            // 
+            // buttonPanel
+            // 
+            resources.ApplyResources(this.buttonPanel, "buttonPanel");
+            this.buttonPanel.Controls.Add(this.printTextBt);
+            this.buttonPanel.Controls.Add(this.printValuebtn);
+            this.buttonPanel.Controls.Add(this.variableSetbt);
+            this.buttonPanel.Controls.Add(this.mathbt);
+            this.buttonPanel.Controls.Add(this.ifbt);
+            this.buttonPanel.Controls.Add(this.elsebt);
+            this.buttonPanel.Controls.Add(this.whilebt);
+            this.buttonPanel.Controls.Add(this.forbt);
+            this.buttonPanel.Controls.Add(this.switchbt);
+            this.buttonPanel.Controls.Add(this.casebt);
+            this.buttonPanel.Controls.Add(this.breakbt);
+            this.buttonPanel.Controls.Add(this.btn12);
+            this.buttonPanel.Controls.Add(this.functionbt);
+            this.buttonPanel.Controls.Add(this.returnbt);
+            this.buttonPanel.Name = "buttonPanel";
+            this.buttonPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // TestForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.Controls.Add(this.codeBlockSelectionTree);
-            this.Controls.Add(this.codeInTextPanel);
+            this.Controls.Add(this.outputScreen);
+            this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.entryField);
-            this.Controls.Add(this.outputScreen);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mainMenu);
+            this.Controls.Add(this.codeInTextPanel);
             this.ForeColor = System.Drawing.Color.Black;
             this.MainMenuStrip = this.mainMenu;
             this.Name = "TestForm";
             this.Load += new System.EventHandler(this.TestForm_Load);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
+            this.buttonPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,8 +384,25 @@ namespace PL_Proyect
         private System.Windows.Forms.ToolStripMenuItem tbHelp;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.RichTextBox codeInTextPanel;
-        private System.Windows.Forms.TreeView codeBlockSelectionTree;
         private System.Windows.Forms.ToolStripMenuItem defaultCode;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
+        private System.Windows.Forms.Button returnbt;
+        private System.Windows.Forms.Button functionbt;
+        private System.Windows.Forms.Button btn12;
+        private System.Windows.Forms.Button breakbt;
+        private System.Windows.Forms.Button casebt;
+        private System.Windows.Forms.Button switchbt;
+        private System.Windows.Forms.Button forbt;
+        private System.Windows.Forms.Button whilebt;
+        private System.Windows.Forms.Button elsebt;
+        private System.Windows.Forms.Button ifbt;
+        private System.Windows.Forms.Button mathbt;
+        private System.Windows.Forms.Button variableSetbt;
+        private System.Windows.Forms.Button printValuebtn;
+        private System.Windows.Forms.Button printTextBt;
+        private System.Windows.Forms.FlowLayoutPanel buttonPanel;
     }
 }
 

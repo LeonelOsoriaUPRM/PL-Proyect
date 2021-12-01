@@ -8,21 +8,21 @@ using System.Windows.Forms;
 
 namespace PL_Proyect
 {
-    public partial class aboutForm : Form
+    public partial class placeholderForm : Form
     {
-        public aboutForm()
+        public placeholderForm()
         {
             InitializeComponent();
         }
 
-        private void aboutTextBox_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void aboutForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void placeholderForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            TestForm.aboutFrom = null;
+            TestForm.placeholderForm = null;
         }
     }
 }
