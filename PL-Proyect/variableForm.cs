@@ -14,5 +14,10 @@ namespace PL_Proyect
         {
             InitializeComponent();
         }
+
+        private void variableForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            TestForm.variableForm = null;
+        }
     }
 }

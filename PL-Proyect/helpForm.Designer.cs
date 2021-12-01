@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(helpForm));
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -51,8 +52,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.Window;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "helpForm";
             this.Text = "I am here to help!";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.helpForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

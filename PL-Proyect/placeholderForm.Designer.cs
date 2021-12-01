@@ -1,6 +1,7 @@
-﻿namespace PL_Proyect
+﻿
+namespace PL_Proyect
 {
-    partial class variableForm
+    partial class placeholderForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +29,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(variableForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(placeholderForm));
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // variableForm
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "There\'s nothing here... yet.";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // placeholderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.ForeColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.Window;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "variableForm";
-            this.Text = "variableForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.variableForm_FormClosed);
+            this.Name = "placeholderForm";
+            this.Text = "placeholderForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.placeholderForm_FormClosed);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }

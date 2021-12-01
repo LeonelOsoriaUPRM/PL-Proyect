@@ -14,5 +14,10 @@ namespace PL_Proyect
         {
             InitializeComponent();
         }
+
+        private void printValueForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            TestForm.printValueForm = null;
+        }
     }
 }

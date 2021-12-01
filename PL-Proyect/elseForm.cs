@@ -14,5 +14,15 @@ namespace PL_Proyect
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void elseForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            TestForm.elseForm = null;
+        }
     }
 }

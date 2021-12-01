@@ -19,5 +19,10 @@ namespace PL_Proyect
         {
 
         }
+
+        private void helpForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            TestForm.helpForm = null;
+        }
     }
 }

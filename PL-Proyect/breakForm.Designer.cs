@@ -1,6 +1,7 @@
-﻿namespace PL_Proyect
+﻿
+namespace PL_Proyect
 {
-    partial class variableForm
+    partial class breakForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +29,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(variableForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(breakForm));
             this.SuspendLayout();
             // 
-            // variableForm
+            // breakForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -41,9 +42,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "variableForm";
-            this.Text = "variableForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.variableForm_FormClosed);
+            this.Name = "breakForm";
+            this.Text = "breakForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.breakForm_FormClosed);
             this.ResumeLayout(false);
 
         }

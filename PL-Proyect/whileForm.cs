@@ -14,5 +14,10 @@ namespace PL_Proyect
         {
             InitializeComponent();
         }
+
+        private void whileForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            TestForm.whileForm = null;
+        }
     }
 }

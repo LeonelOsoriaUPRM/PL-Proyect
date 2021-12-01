@@ -51,21 +51,21 @@ namespace PL_Proyect
             this.entryField = new System.Windows.Forms.TextBox();
             this.sendButton = new System.Windows.Forms.Button();
             this.codeInTextPanel = new System.Windows.Forms.RichTextBox();
-            this.buttonPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.printTextBt = new System.Windows.Forms.Button();
-            this.printValuebtn = new System.Windows.Forms.Button();
-            this.variableSetbt = new System.Windows.Forms.Button();
-            this.mathbt = new System.Windows.Forms.Button();
-            this.ifbt = new System.Windows.Forms.Button();
-            this.elsebt = new System.Windows.Forms.Button();
-            this.whilebt = new System.Windows.Forms.Button();
-            this.forbt = new System.Windows.Forms.Button();
-            this.switchbt = new System.Windows.Forms.Button();
-            this.casebt = new System.Windows.Forms.Button();
-            this.breakbt = new System.Windows.Forms.Button();
-            this.btn12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.returnbt = new System.Windows.Forms.Button();
+            this.functionbt = new System.Windows.Forms.Button();
+            this.btn12 = new System.Windows.Forms.Button();
+            this.breakbt = new System.Windows.Forms.Button();
+            this.casebt = new System.Windows.Forms.Button();
+            this.switchbt = new System.Windows.Forms.Button();
+            this.forbt = new System.Windows.Forms.Button();
+            this.whilebt = new System.Windows.Forms.Button();
+            this.elsebt = new System.Windows.Forms.Button();
+            this.ifbt = new System.Windows.Forms.Button();
+            this.mathbt = new System.Windows.Forms.Button();
+            this.variableSetbt = new System.Windows.Forms.Button();
+            this.printValuebtn = new System.Windows.Forms.Button();
+            this.printTextBt = new System.Windows.Forms.Button();
+            this.buttonPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.mainMenu.SuspendLayout();
             this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
@@ -151,6 +151,7 @@ namespace PL_Proyect
             // 
             this.tbRun.Name = "tbRun";
             resources.ApplyResources(this.tbRun, "tbRun");
+            this.tbRun.Click += new System.EventHandler(this.tbRun_Click);
             // 
             // tbExample
             // 
@@ -212,12 +213,113 @@ namespace PL_Proyect
             // 
             // codeInTextPanel
             // 
+            this.codeInTextPanel.AcceptsTab = true;
+            resources.ApplyResources(this.codeInTextPanel, "codeInTextPanel");
+            this.codeInTextPanel.AutoWordSelection = true;
             this.codeInTextPanel.BackColor = System.Drawing.SystemColors.WindowText;
             this.codeInTextPanel.EnableAutoDragDrop = true;
             this.codeInTextPanel.ForeColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.codeInTextPanel, "codeInTextPanel");
             this.codeInTextPanel.Name = "codeInTextPanel";
+            this.codeInTextPanel.ShowSelectionMargin = true;
             this.codeInTextPanel.TextChanged += new System.EventHandler(this.codeInTextPanel_TextChanged);
+            // 
+            // returnbt
+            // 
+            resources.ApplyResources(this.returnbt, "returnbt");
+            this.returnbt.Name = "returnbt";
+            this.returnbt.UseVisualStyleBackColor = true;
+            this.returnbt.Click += new System.EventHandler(this.returnbt_Click);
+            // 
+            // functionbt
+            // 
+            resources.ApplyResources(this.functionbt, "functionbt");
+            this.functionbt.Name = "functionbt";
+            this.functionbt.UseVisualStyleBackColor = true;
+            this.functionbt.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // btn12
+            // 
+            resources.ApplyResources(this.btn12, "btn12");
+            this.btn12.Name = "btn12";
+            this.btn12.UseVisualStyleBackColor = true;
+            this.btn12.Click += new System.EventHandler(this.btn12_Click);
+            // 
+            // breakbt
+            // 
+            resources.ApplyResources(this.breakbt, "breakbt");
+            this.breakbt.Name = "breakbt";
+            this.breakbt.UseVisualStyleBackColor = true;
+            this.breakbt.Click += new System.EventHandler(this.breakbt_Click);
+            // 
+            // casebt
+            // 
+            resources.ApplyResources(this.casebt, "casebt");
+            this.casebt.Name = "casebt";
+            this.casebt.UseVisualStyleBackColor = true;
+            this.casebt.Click += new System.EventHandler(this.casebt_Click);
+            // 
+            // switchbt
+            // 
+            resources.ApplyResources(this.switchbt, "switchbt");
+            this.switchbt.Name = "switchbt";
+            this.switchbt.UseVisualStyleBackColor = true;
+            this.switchbt.Click += new System.EventHandler(this.switchbt_Click);
+            // 
+            // forbt
+            // 
+            resources.ApplyResources(this.forbt, "forbt");
+            this.forbt.Name = "forbt";
+            this.forbt.UseVisualStyleBackColor = true;
+            this.forbt.Click += new System.EventHandler(this.forbt_Click);
+            // 
+            // whilebt
+            // 
+            resources.ApplyResources(this.whilebt, "whilebt");
+            this.whilebt.Name = "whilebt";
+            this.whilebt.UseVisualStyleBackColor = true;
+            this.whilebt.Click += new System.EventHandler(this.whilebt_Click);
+            // 
+            // elsebt
+            // 
+            resources.ApplyResources(this.elsebt, "elsebt");
+            this.elsebt.Name = "elsebt";
+            this.elsebt.UseVisualStyleBackColor = true;
+            this.elsebt.Click += new System.EventHandler(this.elsebt_Click);
+            // 
+            // ifbt
+            // 
+            resources.ApplyResources(this.ifbt, "ifbt");
+            this.ifbt.Name = "ifbt";
+            this.ifbt.UseVisualStyleBackColor = true;
+            this.ifbt.Click += new System.EventHandler(this.ifbt_Click);
+            // 
+            // mathbt
+            // 
+            resources.ApplyResources(this.mathbt, "mathbt");
+            this.mathbt.Name = "mathbt";
+            this.mathbt.UseVisualStyleBackColor = true;
+            this.mathbt.Click += new System.EventHandler(this.mathbt_Click);
+            // 
+            // variableSetbt
+            // 
+            resources.ApplyResources(this.variableSetbt, "variableSetbt");
+            this.variableSetbt.Name = "variableSetbt";
+            this.variableSetbt.UseVisualStyleBackColor = true;
+            this.variableSetbt.Click += new System.EventHandler(this.variableSetbt_Click);
+            // 
+            // printValuebtn
+            // 
+            resources.ApplyResources(this.printValuebtn, "printValuebtn");
+            this.printValuebtn.Name = "printValuebtn";
+            this.printValuebtn.UseVisualStyleBackColor = true;
+            this.printValuebtn.Click += new System.EventHandler(this.printValuebtn_Click);
+            // 
+            // printTextBt
+            // 
+            resources.ApplyResources(this.printTextBt, "printTextBt");
+            this.printTextBt.Name = "printTextBt";
+            this.printTextBt.UseVisualStyleBackColor = true;
+            this.printTextBt.Click += new System.EventHandler(this.printTextBt_Click);
             // 
             // buttonPanel
             // 
@@ -234,94 +336,10 @@ namespace PL_Proyect
             this.buttonPanel.Controls.Add(this.casebt);
             this.buttonPanel.Controls.Add(this.breakbt);
             this.buttonPanel.Controls.Add(this.btn12);
-            this.buttonPanel.Controls.Add(this.button13);
+            this.buttonPanel.Controls.Add(this.functionbt);
             this.buttonPanel.Controls.Add(this.returnbt);
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // printTextBt
-            // 
-            resources.ApplyResources(this.printTextBt, "printTextBt");
-            this.printTextBt.Name = "printTextBt";
-            this.printTextBt.UseVisualStyleBackColor = true;
-            // 
-            // printValuebtn
-            // 
-            resources.ApplyResources(this.printValuebtn, "printValuebtn");
-            this.printValuebtn.Name = "printValuebtn";
-            this.printValuebtn.UseVisualStyleBackColor = true;
-            // 
-            // variableSetbt
-            // 
-            resources.ApplyResources(this.variableSetbt, "variableSetbt");
-            this.variableSetbt.Name = "variableSetbt";
-            this.variableSetbt.UseVisualStyleBackColor = true;
-            // 
-            // mathbt
-            // 
-            resources.ApplyResources(this.mathbt, "mathbt");
-            this.mathbt.Name = "mathbt";
-            this.mathbt.UseVisualStyleBackColor = true;
-            // 
-            // ifbt
-            // 
-            resources.ApplyResources(this.ifbt, "ifbt");
-            this.ifbt.Name = "ifbt";
-            this.ifbt.UseVisualStyleBackColor = true;
-            // 
-            // elsebt
-            // 
-            resources.ApplyResources(this.elsebt, "elsebt");
-            this.elsebt.Name = "elsebt";
-            this.elsebt.UseVisualStyleBackColor = true;
-            // 
-            // whilebt
-            // 
-            resources.ApplyResources(this.whilebt, "whilebt");
-            this.whilebt.Name = "whilebt";
-            this.whilebt.UseVisualStyleBackColor = true;
-            // 
-            // forbt
-            // 
-            resources.ApplyResources(this.forbt, "forbt");
-            this.forbt.Name = "forbt";
-            this.forbt.UseVisualStyleBackColor = true;
-            // 
-            // switchbt
-            // 
-            resources.ApplyResources(this.switchbt, "switchbt");
-            this.switchbt.Name = "switchbt";
-            this.switchbt.UseVisualStyleBackColor = true;
-            // 
-            // casebt
-            // 
-            resources.ApplyResources(this.casebt, "casebt");
-            this.casebt.Name = "casebt";
-            this.casebt.UseVisualStyleBackColor = true;
-            // 
-            // breakbt
-            // 
-            resources.ApplyResources(this.breakbt, "breakbt");
-            this.breakbt.Name = "breakbt";
-            this.breakbt.UseVisualStyleBackColor = true;
-            // 
-            // btn12
-            // 
-            resources.ApplyResources(this.btn12, "btn12");
-            this.btn12.Name = "btn12";
-            this.btn12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // returnbt
-            // 
-            resources.ApplyResources(this.returnbt, "returnbt");
-            this.returnbt.Name = "returnbt";
-            this.returnbt.UseVisualStyleBackColor = true;
             // 
             // TestForm
             // 
@@ -367,24 +385,24 @@ namespace PL_Proyect
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.RichTextBox codeInTextPanel;
         private System.Windows.Forms.ToolStripMenuItem defaultCode;
-        private System.Windows.Forms.FlowLayoutPanel buttonPanel;
-        private System.Windows.Forms.Button printTextBt;
-        private System.Windows.Forms.Button printValuebtn;
-        private System.Windows.Forms.Button variableSetbt;
-        private System.Windows.Forms.Button mathbt;
-        private System.Windows.Forms.Button ifbt;
-        private System.Windows.Forms.Button elsebt;
-        private System.Windows.Forms.Button whilebt;
-        private System.Windows.Forms.Button forbt;
-        private System.Windows.Forms.Button switchbt;
-        private System.Windows.Forms.Button casebt;
-        private System.Windows.Forms.Button breakbt;
-        private System.Windows.Forms.Button btn12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button returnbt;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
+        private System.Windows.Forms.Button returnbt;
+        private System.Windows.Forms.Button functionbt;
+        private System.Windows.Forms.Button btn12;
+        private System.Windows.Forms.Button breakbt;
+        private System.Windows.Forms.Button casebt;
+        private System.Windows.Forms.Button switchbt;
+        private System.Windows.Forms.Button forbt;
+        private System.Windows.Forms.Button whilebt;
+        private System.Windows.Forms.Button elsebt;
+        private System.Windows.Forms.Button ifbt;
+        private System.Windows.Forms.Button mathbt;
+        private System.Windows.Forms.Button variableSetbt;
+        private System.Windows.Forms.Button printValuebtn;
+        private System.Windows.Forms.Button printTextBt;
+        private System.Windows.Forms.FlowLayoutPanel buttonPanel;
     }
 }
 

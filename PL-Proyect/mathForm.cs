@@ -14,5 +14,10 @@ namespace PL_Proyect
         {
             InitializeComponent();
         }
+
+        private void mathForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            TestForm.mathForm = null;
+        }
     }
 }

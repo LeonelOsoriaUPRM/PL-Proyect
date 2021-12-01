@@ -8,16 +8,16 @@ using System.Windows.Forms;
 
 namespace PL_Proyect
 {
-    public partial class caseForm : Form
+    public partial class breakForm : Form
     {
-        public caseForm()
+        public breakForm()
         {
             InitializeComponent();
         }
 
-        private void caseForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void breakForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            TestForm.caseForm = null;
+            TestForm.breakForm = null;
         }
     }
 }
