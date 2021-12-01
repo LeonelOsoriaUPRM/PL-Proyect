@@ -64,6 +64,5 @@ namespace PL_Proyect
         #endregion
 
         private System.Windows.Forms.RichTextBox aboutTextBox;
-        
     }
 }

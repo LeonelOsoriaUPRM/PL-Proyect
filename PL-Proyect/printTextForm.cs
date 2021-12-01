@@ -8,18 +8,11 @@ using System.Windows.Forms;
 
 namespace PL_Proyect
 {
-    public partial class aboutForm : Form
+    public partial class printTextForm : Form
     {
-        public aboutForm()
+        public printTextForm()
         {
             InitializeComponent();
         }
-
-        private void aboutTextBox_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-
     }
 }
