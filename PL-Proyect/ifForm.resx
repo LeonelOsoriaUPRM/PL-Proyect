@@ -63,12 +63,19 @@
 The "If" statement is one of the most important building blocks in programming as they are the simplest way to add automatic decision making to our programs.
 
 Conditions are statements that are either true or false.  They can be boolean variables and they can also be comparison between two values using the "=="(equal to) and "!="(NOT equal to), both of which can be a variable.  Multiple comparisons can be added to a condition via the use of the "&amp;&amp;"(and) and "||"(or) expressions.
+
 Here's some comparison examples and explanations:
+
 A == B is TRUE if A is equal to B
+
 A != B is TRUE if A is NOT equal to B
+
 A == B &amp;&amp; A == C is TRUE if A is equal to B AND A is equal to C.
+
 A==B || B==C is TRUE if A is equal to B OR B is equal to C.
+
 You can use parentesis "()" like they'd be used in math.
+
 (A==B || A==C) &amp;&amp; D == C for this condition to be true D==C must be true and either A==B or A==C must be true.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

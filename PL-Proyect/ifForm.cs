@@ -43,8 +43,18 @@ namespace PL_Proyect
         private void button1_Click(object sender, EventArgs e)
         {
             string s = textBox1.Text;
-            Clipboard.SetText("if("+s+ ")\n\t\t\t{\n\t\t\t\t\\place code for when condition is true here\n\t\t\t\t\n\t\t\t}");
+            Clipboard.SetText("if("+s+ ")\n\t\t\t{\n\t\t\t\t//place code for when condition is true here\n\t\t\t\t\n\t\t\t}");
             this.Close();
+        }
+
+        private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                string s = textBox1.Text;
+                Clipboard.SetText("if(" + s + ")\n\t\t\t{\n\t\t\t\t//place code for when condition is true here\n\t\t\t\t\n\t\t\t}");
+                this.Close();
+            }
         }
     }
 }

@@ -32,6 +32,7 @@ namespace PL_Proyect
         public TestForm()
         {
             InitializeComponent();
+            codeInTextPanel.EnableContextMenu();
             ConsoleWrite("Click the \"help\" tab for instructions on how this program works");
             ConsoleWrite("Click the \"example\" tab to see example programs");
         }
