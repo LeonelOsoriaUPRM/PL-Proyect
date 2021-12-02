@@ -42,7 +42,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "switchForm";
-            this.Text = "switchForm";
+            this.Text = "Switch";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.switchForm_FormClosed);
             this.ResumeLayout(false);
 

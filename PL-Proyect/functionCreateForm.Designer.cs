@@ -42,7 +42,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "functionCreateForm";
-            this.Text = "functionCreateForm";
+            this.Text = "Create your own Function!";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.functionCreateForm_FormClosed);
             this.ResumeLayout(false);
 

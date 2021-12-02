@@ -42,7 +42,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "returnForm";
-            this.Text = "returnForm";
+            this.Text = "Set Return";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.returnForm_FormClosed);
             this.ResumeLayout(false);
 

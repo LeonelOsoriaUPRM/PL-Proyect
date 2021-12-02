@@ -210,7 +210,7 @@ namespace PL_Proyect
 
         private void elsebt_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("else{\n\t\t\t\t\t\n\t\t\t}");
+            //Clipboard.SetText("else{\n\t\t\t\t\t\n\t\t\t}");
             if (elseForm==null)
             {
                 elseForm = new elseForm();

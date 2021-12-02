@@ -481,7 +481,7 @@ namespace LearningSpace
     <value>20</value>
   </data>
   <data name="switchbt.Text" xml:space="preserve">
-    <value>Switch</value>
+    <value>Switch Case</value>
   </data>
   <data name="&gt;&gt;switchbt.Name" xml:space="preserve">
     <value>switchbt</value>

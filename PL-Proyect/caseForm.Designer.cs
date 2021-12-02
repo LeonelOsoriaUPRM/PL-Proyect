@@ -42,7 +42,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "caseForm";
-            this.Text = "caseForm";
+            this.Text = "Case";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.caseForm_FormClosed);
             this.ResumeLayout(false);
 

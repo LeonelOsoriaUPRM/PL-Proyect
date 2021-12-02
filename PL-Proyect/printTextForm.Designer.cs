@@ -42,7 +42,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "printTextForm";
-            this.Text = "printTextForm";
+            this.Text = "Print Text";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.printTextForm_FormClosed);
             this.ResumeLayout(false);
 
