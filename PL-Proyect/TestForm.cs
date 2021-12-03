@@ -114,6 +114,31 @@ namespace PL_Proyect
             outputScreen.AppendText(s+"\n");
         }
 
+        private void ValueWrite(string s, int t)
+        {
+            outputScreen.SelectionColor = Color.Green;
+            switch (t)
+            {
+                case 1:
+                    //boolean
+                    break;
+
+                case 2:
+                    //int
+                    break;
+
+                case 3:
+                    //double
+                    break;
+                
+                default:
+                    //string
+                    break;
+            }
+            //s = ">" + s;
+            //outputScreen.AppendText(s + "\n");
+        }
+
         private void UserWrite(string s)
         {
             outputScreen.SelectionColor = Color.Red;
@@ -331,6 +356,11 @@ namespace PL_Proyect
         private void tbRun_Click(object sender, EventArgs e)
         {
             ConsoleWrite("I'm sorry, I can't do that yet");
+        }
+
+        private void clearOutputToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            outputScreen.Text = "";
         }
     }
 }

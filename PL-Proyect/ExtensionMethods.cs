@@ -4,6 +4,8 @@ using System.Text;
 using System.Windows.Forms;
 
 // Important ! Create the ExtensionMethods class as a "public static" class
+
+//This class was not made by us, link and credit in the AboutForm
 public static class ExtensionMethods
 {
     public static void EnableContextMenu(this RichTextBox rtb)
