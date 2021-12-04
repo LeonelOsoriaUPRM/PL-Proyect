@@ -115,13 +115,13 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.SystemColors.WindowText;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.Location = new System.Drawing.Point(13, 13);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(376, 91);
             this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "This form will not be able to verify \nNVM I DID IT!";
+            this.richTextBox1.Text = "An explanation about variables goes here";
             // 
             // variableForm
             // 
