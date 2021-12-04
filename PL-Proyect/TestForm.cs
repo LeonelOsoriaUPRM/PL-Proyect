@@ -32,6 +32,7 @@ namespace PL_Proyect
         public TestForm()
         {
             InitializeComponent();
+            codeInTextPanel.EnableContextMenu();
             ConsoleWrite("Click the \"help\" tab for instructions on how this program works");
             ConsoleWrite("Click the \"example\" tab to see example programs");
         }
@@ -111,6 +112,31 @@ namespace PL_Proyect
             outputScreen.SelectionColor = Color.Green;
             s = ">" + s;
             outputScreen.AppendText(s+"\n");
+        }
+
+        private void ValueWrite(string s, int t)
+        {
+            outputScreen.SelectionColor = Color.Green;
+            switch (t)
+            {
+                case 1:
+                    //boolean
+                    break;
+
+                case 2:
+                    //int
+                    break;
+
+                case 3:
+                    //double
+                    break;
+                
+                default:
+                    //string
+                    break;
+            }
+            //s = ">" + s;
+            //outputScreen.AppendText(s + "\n");
         }
 
         private void UserWrite(string s)
@@ -210,7 +236,7 @@ namespace PL_Proyect
 
         private void elsebt_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("else{\n\t\t\t\t\t\n\t\t\t}");
+            //Clipboard.SetText("else{\n\t\t\t\t\t\n\t\t\t}");
             if (elseForm==null)
             {
                 elseForm = new elseForm();
@@ -330,6 +356,11 @@ namespace PL_Proyect
         private void tbRun_Click(object sender, EventArgs e)
         {
             ConsoleWrite("I'm sorry, I can't do that yet");
+        }
+
+        private void clearOutputToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            outputScreen.Text = "";
         }
     }
 }

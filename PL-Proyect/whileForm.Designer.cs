@@ -42,7 +42,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "whileForm";
-            this.Text = "whileForm";
+            this.Text = "While Loop";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.whileForm_FormClosed);
             this.ResumeLayout(false);
 

@@ -39,7 +39,7 @@ namespace PL_Proyect
             this.aboutTextBox.Location = new System.Drawing.Point(0, 0);
             this.aboutTextBox.Name = "aboutTextBox";
             this.aboutTextBox.ReadOnly = true;
-            this.aboutTextBox.Size = new System.Drawing.Size(291, 300);
+            this.aboutTextBox.Size = new System.Drawing.Size(291, 234);
             this.aboutTextBox.TabIndex = 0;
             this.aboutTextBox.Text = resources.GetString("aboutTextBox.Text");
             this.aboutTextBox.TextChanged += new System.EventHandler(this.aboutTextBox_TextChanged);
@@ -50,7 +50,7 @@ namespace PL_Proyect
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(291, 300);
+            this.ClientSize = new System.Drawing.Size(291, 234);
             this.Controls.Add(this.aboutTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
