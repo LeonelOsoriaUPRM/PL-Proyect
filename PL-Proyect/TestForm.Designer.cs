@@ -182,6 +182,7 @@ namespace PL_Proyect
             resources.ApplyResources(this.outputScreen, "outputScreen");
             this.outputScreen.BackColor = System.Drawing.SystemColors.WindowText;
             this.outputScreen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.outputScreen.Cursor = System.Windows.Forms.Cursors.Default;
             this.outputScreen.EnableAutoDragDrop = true;
             this.outputScreen.ForeColor = System.Drawing.SystemColors.Window;
             this.outputScreen.Name = "outputScreen";
@@ -328,8 +329,8 @@ namespace PL_Proyect
             this.buttonPanel.Controls.Add(this.forbt);
             this.buttonPanel.Controls.Add(this.switchbt);
             this.buttonPanel.Controls.Add(this.casebt);
-            this.buttonPanel.Controls.Add(this.breakbt);
             this.buttonPanel.Controls.Add(this.btn12);
+            this.buttonPanel.Controls.Add(this.breakbt);
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 

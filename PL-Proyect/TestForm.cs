@@ -28,6 +28,7 @@ namespace PL_Proyect
         public static switchForm switchForm = null;
         public static variableForm variableForm = null;
         public static whileForm whileForm = null;
+        public static defaultSwitchForm defaultSwitchForm = null;
 
         public TestForm()
         {
@@ -342,14 +343,14 @@ namespace PL_Proyect
 
         private void btn12_Click(object sender, EventArgs e)
         {
-            if (placeholderForm == null)
+            if (defaultSwitchForm == null)
             {
-                placeholderForm = new placeholderForm();
-                placeholderForm.Show();
+                defaultSwitchForm = new defaultSwitchForm();
+                defaultSwitchForm.Show();
             }
             else
             {
-                placeholderForm.BringToFront();
+                defaultSwitchForm.BringToFront();
             }
         }
 
