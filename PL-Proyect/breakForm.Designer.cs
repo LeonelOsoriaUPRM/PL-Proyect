@@ -43,7 +43,7 @@ namespace PL_Proyect
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "breakForm";
-            this.Text = "breakForm";
+            this.Text = "Break";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.breakForm_FormClosed);
             this.ResumeLayout(false);
 

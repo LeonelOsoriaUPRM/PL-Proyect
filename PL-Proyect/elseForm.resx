@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>The "else" statement will only run if every previous "if" statement had a FALSE condition.
+    <value>The "else" statement will only run if every previous "if" statement had a FALSE condition.  It will not run if there's no "if" statement.
 
 "Else" statements are useful for situations where there's only two conditions (like a yes or no question) or in situations where there's multiple conditions and you want there to be a default result for when none of those conditions are TRUE.</value>
   </data>

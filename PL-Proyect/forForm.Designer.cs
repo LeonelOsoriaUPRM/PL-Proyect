@@ -42,7 +42,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "forForm";
-            this.Text = "forForm";
+            this.Text = "For Loop";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.forForm_FormClosed);
             this.ResumeLayout(false);
 

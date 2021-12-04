@@ -17,6 +17,7 @@ namespace PL_Proyect
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Clipboard.SetText("else\n\t\t\t{\n\t\t\t\t//place your \"else\" code here\n\t\t\t\t\n\t\t\t}");
             this.Close();
         }
 

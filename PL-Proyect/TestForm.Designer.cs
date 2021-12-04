@@ -38,9 +38,8 @@ namespace PL_Proyect
             this.tbSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.tbEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.defaultCode = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearOutputToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbRun = new System.Windows.Forms.ToolStripMenuItem();
             this.tbExample = new System.Windows.Forms.ToolStripMenuItem();
             this.tbHelloWorld = new System.Windows.Forms.ToolStripMenuItem();
@@ -118,9 +117,8 @@ namespace PL_Proyect
             // 
             this.tbEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.defaultCode,
-            this.toolStripSeparator2,
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem});
+            this.clearOutputToolStripMenuItem,
+            this.toolStripSeparator2});
             this.tbEdit.Name = "tbEdit";
             resources.ApplyResources(this.tbEdit, "tbEdit");
             // 
@@ -130,22 +128,16 @@ namespace PL_Proyect
             resources.ApplyResources(this.defaultCode, "defaultCode");
             this.defaultCode.Click += new System.EventHandler(this.defaultCodeToolStripMenuItem_Click);
             // 
+            // clearOutputToolStripMenuItem
+            // 
+            this.clearOutputToolStripMenuItem.Name = "clearOutputToolStripMenuItem";
+            resources.ApplyResources(this.clearOutputToolStripMenuItem, "clearOutputToolStripMenuItem");
+            this.clearOutputToolStripMenuItem.Click += new System.EventHandler(this.clearOutputToolStripMenuItem_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            resources.ApplyResources(this.undoToolStripMenuItem, "undoToolStripMenuItem");
-            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            resources.ApplyResources(this.redoToolStripMenuItem, "redoToolStripMenuItem");
-            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
             // 
             // tbRun
             // 
@@ -326,6 +318,8 @@ namespace PL_Proyect
             resources.ApplyResources(this.buttonPanel, "buttonPanel");
             this.buttonPanel.Controls.Add(this.printTextBt);
             this.buttonPanel.Controls.Add(this.printValuebtn);
+            this.buttonPanel.Controls.Add(this.returnbt);
+            this.buttonPanel.Controls.Add(this.functionbt);
             this.buttonPanel.Controls.Add(this.variableSetbt);
             this.buttonPanel.Controls.Add(this.mathbt);
             this.buttonPanel.Controls.Add(this.ifbt);
@@ -336,8 +330,6 @@ namespace PL_Proyect
             this.buttonPanel.Controls.Add(this.casebt);
             this.buttonPanel.Controls.Add(this.breakbt);
             this.buttonPanel.Controls.Add(this.btn12);
-            this.buttonPanel.Controls.Add(this.functionbt);
-            this.buttonPanel.Controls.Add(this.returnbt);
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -385,9 +377,6 @@ namespace PL_Proyect
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.RichTextBox codeInTextPanel;
         private System.Windows.Forms.ToolStripMenuItem defaultCode;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
         private System.Windows.Forms.Button returnbt;
         private System.Windows.Forms.Button functionbt;
         private System.Windows.Forms.Button btn12;
@@ -403,6 +392,8 @@ namespace PL_Proyect
         private System.Windows.Forms.Button printValuebtn;
         private System.Windows.Forms.Button printTextBt;
         private System.Windows.Forms.FlowLayoutPanel buttonPanel;
+        private System.Windows.Forms.ToolStripMenuItem clearOutputToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 
