@@ -13,6 +13,7 @@ namespace PL_Proyect
         [STAThread]
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World, we're making a compiler baby!");
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
