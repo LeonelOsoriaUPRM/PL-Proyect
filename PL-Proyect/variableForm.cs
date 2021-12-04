@@ -140,7 +140,7 @@ namespace PL_Proyect
 
             }
 
-            else if(!(textBox1.Text == string.Empty) && !(textBox2.Text == string.Empty) && a)
+            else if(!(textBox2.Text == string.Empty) && a)
             {
                 Clipboard.SetText(t + textBox1.Text + " = " + textBox2.Text+";");
                 this.Close();

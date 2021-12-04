@@ -19,5 +19,11 @@ namespace PL_Proyect
         {
             TestForm.breakForm = null;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText("break;");
+            this.Close();
+        }
     }
 }

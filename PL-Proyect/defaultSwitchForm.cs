@@ -19,5 +19,11 @@ namespace PL_Proyect
         {
             TestForm.defaultSwitchForm = null;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText("default:\n\t\t\t//Place code for default case here\n\t\t\t\t\n\t\t\tbreak;");
+            this.Close();
+        }
     }
 }
