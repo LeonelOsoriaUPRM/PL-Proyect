@@ -1,6 +1,6 @@
 ﻿namespace PL_Proyect.LexerParserClases
 {
-    enum TypeOfSyntax
+    public enum TypeOfSyntax
     {
         NumToken,
         WhtSpToken,

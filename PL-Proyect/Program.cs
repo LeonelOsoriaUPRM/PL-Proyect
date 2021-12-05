@@ -10,10 +10,10 @@ using Lexer = PL_Proyect.LexerParserClases.Lexer;
 
 namespace PL_Proyect
 {
-    static class Program
+    internal static class Program
     {
         [STAThread]
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             
             Console.WriteLine("Hello World, we're making a compiler baby!");
@@ -21,8 +21,8 @@ namespace PL_Proyect
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TestForm());
-            /*
-            bool showTree = false;
+            
+            var showTree = false;
             while (true)
             {
                 Console.Write(">");
@@ -45,12 +45,11 @@ namespace PL_Proyect
 
                 if (showTree)
                 {
-                    var color = Console.ForegroundColor;
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
 
                     TreetyPrint(sntxTree.Root);
 
-                    Console.ForegroundColor = color;
+                    Console.ResetColor();
                 }
                 if (!sntxTree.Diagnostics.Any())
                 {
@@ -61,13 +60,13 @@ namespace PL_Proyect
                 }
                 else
                 {
-                    var color = Console.ForegroundColor;
+                 
                     Console.ForegroundColor = ConsoleColor.DarkRed;
 
                     foreach (var diag in sntxTree.Diagnostics)
                         Console.Write(diag);
 
-                    Console.ForegroundColor = color;
+                    Console.ResetColor();
                 }
                 /*
                 var lexer = new Lexer(line);
@@ -83,7 +82,7 @@ namespace PL_Proyect
                 }*/
                 
 
-           /* }*/
+            }
 
         }
 

@@ -2,7 +2,7 @@
 
 namespace PL_Proyect.LexerParserClases
 {
-    sealed class ParenExpressSntx : EvalSyntax
+    public sealed class ParenExpressSntx : EvalSyntax
     {
         public ParenExpressSntx(SntxToken openParenToken, EvalSyntax express, SntxToken closeParenToken)
         {

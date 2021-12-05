@@ -2,7 +2,7 @@
 
 namespace PL_Proyect.LexerParserClases
 {
-    sealed class EvalSyntxBinary : EvalSyntax
+    public sealed class EvalSyntxBinary : EvalSyntax
     {
         public EvalSyntxBinary(EvalSyntax leftSyn, SntxToken evaluator, EvalSyntax rightSyn)
         {

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace PL_Proyect.LexerParserClases
 {
-    class SntxToken : SntxNode
+    public sealed class SntxToken : SntxNode
     {
         public SntxToken(TypeOfSyntax type, int position, string textString, object value)
         {

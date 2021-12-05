@@ -2,7 +2,7 @@
 
 namespace PL_Proyect.LexerParserClases
 {
-    class Parser
+    internal sealed class Parser
     {
         private readonly SntxToken[] tokenList;
 

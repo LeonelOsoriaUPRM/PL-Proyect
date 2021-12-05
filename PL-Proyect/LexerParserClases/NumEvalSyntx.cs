@@ -2,7 +2,7 @@
 
 namespace PL_Proyect.LexerParserClases
 {
-    sealed class NumEvalSyntx : EvalSyntax
+    public sealed class NumEvalSyntx : EvalSyntax
     {
         public NumEvalSyntx(SntxToken numToken)
         {

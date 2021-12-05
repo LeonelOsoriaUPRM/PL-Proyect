@@ -2,7 +2,7 @@
 
 namespace PL_Proyect.LexerParserClases
 {
-    class Lexer
+    internal sealed class Lexer
     {
         private readonly string textString;
         private int currentPos;

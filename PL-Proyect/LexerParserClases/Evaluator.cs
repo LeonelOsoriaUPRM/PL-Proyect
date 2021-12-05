@@ -3,7 +3,7 @@ using System.Text;
 
 namespace PL_Proyect.LexerParserClases
 {
-    class Evaluator
+    public sealed class Evaluator
     {
         private readonly EvalSyntax root;
         public Evaluator(EvalSyntax root)

@@ -2,7 +2,7 @@
 
 namespace PL_Proyect.LexerParserClases
 {
-    abstract class SntxNode
+    public abstract class SntxNode
     {
         public abstract TypeOfSyntax Type { get; }
 

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace PL_Proyect.LexerParserClases
 {
-    sealed class SntxTree
+    public sealed class SntxTree
     {
         public SntxTree(IEnumerable<string> diagnostics, EvalSyntax root, SntxToken FileEndToken)
         {
