@@ -25,5 +25,10 @@ namespace PL_Proyect
             Clipboard.SetText("break;");
             this.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

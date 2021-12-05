@@ -55,7 +55,7 @@ namespace PL_Proyect
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 120);
+            this.label1.Location = new System.Drawing.Point(12, 124);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(363, 25);
             this.label1.TabIndex = 1;
@@ -66,7 +66,7 @@ namespace PL_Proyect
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(13, 145);
+            this.label2.Location = new System.Drawing.Point(13, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 25);
             this.label2.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace PL_Proyect
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(83, 146);
+            this.button1.Location = new System.Drawing.Point(83, 150);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(43, 23);
             this.button1.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace PL_Proyect
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(434, 461);
+            this.ClientSize = new System.Drawing.Size(434, 179);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

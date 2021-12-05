@@ -54,17 +54,18 @@ namespace PL_Proyect
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(13, 116);
+            this.label1.Location = new System.Drawing.Point(12, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "break;";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(82, 120);
+            this.button1.Location = new System.Drawing.Point(81, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(44, 23);
             this.button1.TabIndex = 2;
@@ -79,7 +80,7 @@ namespace PL_Proyect
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(434, 461);
+            this.ClientSize = new System.Drawing.Size(434, 162);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);
