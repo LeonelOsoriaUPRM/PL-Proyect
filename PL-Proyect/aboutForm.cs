@@ -15,11 +15,6 @@ namespace PL_Proyect
             InitializeComponent();
         }
 
-        private void aboutTextBox_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void aboutForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             TestForm.aboutFrom = null;

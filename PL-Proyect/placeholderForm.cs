@@ -15,11 +15,6 @@ namespace PL_Proyect
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void placeholderForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             TestForm.placeholderForm = null;

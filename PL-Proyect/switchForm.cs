@@ -20,11 +20,6 @@ namespace PL_Proyect
             TestForm.switchForm = null;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Clipboard.SetText("switch (" + textBox1.Text + ")\n\t\t\t{\n\t\t\t\t//place \"cases\" here\n\t\t\t\t\n\t\t\t}");
@@ -37,11 +32,6 @@ namespace PL_Proyect
                 Clipboard.SetText("switch (" + textBox1.Text + ")\n\t\t\t{\n\t\t\t\t//place \"cases\" here\n\t\t\t\t\n\t\t\t}");
                 this.Close();
             }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

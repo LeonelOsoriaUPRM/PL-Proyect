@@ -42,7 +42,6 @@ namespace PL_Proyect
             this.aboutTextBox.Size = new System.Drawing.Size(291, 234);
             this.aboutTextBox.TabIndex = 0;
             this.aboutTextBox.Text = resources.GetString("aboutTextBox.Text");
-            this.aboutTextBox.TextChanged += new System.EventHandler(this.aboutTextBox_TextChanged);
             // 
             // aboutForm
             // 

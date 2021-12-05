@@ -43,11 +43,6 @@ namespace PL_Proyect
 
         }
 
-        private void entryField_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbHelloWorld_click(object sender, EventArgs e)
         {
             //outputScreen.AppendText(">Hello World\n");
@@ -80,25 +75,17 @@ namespace PL_Proyect
             aboutForm.Show();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbHelp_Click(object sender, EventArgs e)
         {
             helpForm help = new helpForm();
             help.Show();
         }
 
-        private void codeInTextPanel_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
+            //
+            //Mark for deletion if safe
+            //
         }
 
         private void defaultCodeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -152,22 +139,9 @@ namespace PL_Proyect
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-
-        }
-
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ConsoleWrite("To undo please press Ctrl+Z, this also works on most apps!");
-        }
-
-        private void redoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ConsoleWrite("To redo please press Ctrl+Y, this also works on most apps!");
-        }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
+            //
+            //Mark for deletion if safe
+            //
         }
 
         private void printTextBt_Click(object sender, EventArgs e)
@@ -182,6 +156,7 @@ namespace PL_Proyect
                 printTextForm.BringToFront();
             }
         }
+        
 
         private void printValuebtn_Click(object sender, EventArgs e)
         {

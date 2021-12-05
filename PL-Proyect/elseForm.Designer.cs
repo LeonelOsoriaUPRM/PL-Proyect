@@ -88,7 +88,7 @@
             this.ForeColor = System.Drawing.SystemColors.Window;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "elseForm";
-            this.Text = "Else";
+            this.Text = "Ç";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.elseForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();

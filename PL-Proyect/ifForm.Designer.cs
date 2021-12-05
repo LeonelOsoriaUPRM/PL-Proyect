@@ -66,7 +66,6 @@
             this.richTextBox2.Size = new System.Drawing.Size(388, 454);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // label1
             // 
@@ -88,7 +87,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(352, 23);
             this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
             // 
             // label2
@@ -102,7 +100,6 @@
             this.label2.Size = new System.Drawing.Size(394, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "{\\\\place code for when condition is true here}";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -115,7 +112,6 @@
             this.label3.Size = new System.Drawing.Size(18, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = ")";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button1
             // 

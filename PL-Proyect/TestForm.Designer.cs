@@ -194,7 +194,6 @@ namespace PL_Proyect
             resources.ApplyResources(this.entryField, "entryField");
             this.entryField.ForeColor = System.Drawing.Color.Red;
             this.entryField.Name = "entryField";
-            this.entryField.TextChanged += new System.EventHandler(this.entryField_TextChanged);
             this.entryField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
             // 
             // sendButton
@@ -214,7 +213,6 @@ namespace PL_Proyect
             this.codeInTextPanel.ForeColor = System.Drawing.SystemColors.Window;
             this.codeInTextPanel.Name = "codeInTextPanel";
             this.codeInTextPanel.ShowSelectionMargin = true;
-            this.codeInTextPanel.TextChanged += new System.EventHandler(this.codeInTextPanel_TextChanged);
             // 
             // returnbt
             // 

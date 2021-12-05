@@ -41,7 +41,6 @@
             this.label1.Size = new System.Drawing.Size(193, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "This form will have some help later!";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // richTextBox1
             // 
