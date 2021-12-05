@@ -82,6 +82,9 @@ For: Right click menu on Rich Text Boxes
 https://www.learn-c.org/
 For: Explaining things in a proper way
 
+https://github.com/terrajobst/minsk
+For: Showing how to make a compiler
+
 Stack Overflow users answering questions</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
