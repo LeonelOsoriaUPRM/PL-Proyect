@@ -58,9 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="aboutTextBox.Text" xml:space="preserve">
-    <value>
-
-Made in VisualStudio using C# by:
+    <value>Made in VisualStudio using C# by:
 Leonel Osoria Toledo
 Jesús A. Jaime Rosado
 Rose M. Sanchez Irizzary
@@ -70,7 +68,19 @@ https://github.com/Asendo316/Rex-IDE
 For: Inspiration in terms of layout
 
 https://www.youtube.com/watch?v=v3UyE0x1Sbc
-For: Showing syntax
+For: Showing syntax and techniques
+
+https://docs.microsoft.com/en-us/dotnet/csharp/
+For: Great documentation on winforms and c#
+
+https://github.com/antlr/antlrcs
+For: Having functions that proved to be invaluable
+
+https://ourcodeworld.com/articles/read/1094/how-to-implement-a-copy-cut-and-paste-context-menu-over-a-rich-text-box-in-winforms-c-sharp
+For: Right click menu on Rich Text Boxes
+
+https://www.learn-c.org/
+For: Explaining things in a proper way
 
 Stack Overflow users answering questions</value>
   </data>

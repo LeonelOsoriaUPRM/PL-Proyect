@@ -8,27 +8,22 @@ using System.Windows.Forms;
 
 namespace PL_Proyect
 {
-    public partial class breakForm : Form
+    public partial class defaultSwitchForm : Form
     {
-        public breakForm()
+        public defaultSwitchForm()
         {
             InitializeComponent();
         }
 
-        private void breakForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void defaultSwitchForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            TestForm.breakForm = null;
+            TestForm.defaultSwitchForm = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("break;");
+            Clipboard.SetText("default:\n\t\t\t//Place code for default case here\n\t\t\t\t\n\t\t\tbreak;");
             this.Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
