@@ -319,8 +319,8 @@ namespace PL_Proyect
             resources.ApplyResources(this.buttonPanel, "buttonPanel");
             this.buttonPanel.Controls.Add(this.printTextBt);
             this.buttonPanel.Controls.Add(this.printValuebtn);
-            this.buttonPanel.Controls.Add(this.returnbt);
             this.buttonPanel.Controls.Add(this.functionbt);
+            this.buttonPanel.Controls.Add(this.returnbt);
             this.buttonPanel.Controls.Add(this.variableSetbt);
             this.buttonPanel.Controls.Add(this.mathbt);
             this.buttonPanel.Controls.Add(this.ifbt);

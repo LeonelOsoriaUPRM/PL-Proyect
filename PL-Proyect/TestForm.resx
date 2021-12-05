@@ -61,6 +61,84 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tbNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="tbNew.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="tbOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="tbOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 6</value>
+  </data>
+  <data name="tbSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="tbSaveAs.Text" xml:space="preserve">
+    <value>SaveAs</value>
+  </data>
+  <data name="tbFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="tbFile.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="defaultCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="defaultCode.Text" xml:space="preserve">
+    <value>Default Code</value>
+  </data>
+  <data name="clearOutputToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="clearOutputToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clear Output</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 6</value>
+  </data>
+  <data name="tbEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="tbEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="tbRun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="tbRun.Text" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="tbHelloWorld.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="tbHelloWorld.Text" xml:space="preserve">
+    <value>Hello Wolrd!</value>
+  </data>
+  <data name="tbExample.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="tbExample.Text" xml:space="preserve">
+    <value>Examples</value>
+  </data>
+  <data name="tbHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="tbHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
   <data name="mainMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -85,84 +163,6 @@
   </data>
   <data name="&gt;&gt;mainMenu.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="tbFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
-  </data>
-  <data name="tbFile.Text" xml:space="preserve">
-    <value>File</value>
-  </data>
-  <data name="tbNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="tbNew.Text" xml:space="preserve">
-    <value>New</value>
-  </data>
-  <data name="tbOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="tbOpen.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 6</value>
-  </data>
-  <data name="tbSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="tbSaveAs.Text" xml:space="preserve">
-    <value>SaveAs</value>
-  </data>
-  <data name="tbEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 20</value>
-  </data>
-  <data name="tbEdit.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="defaultCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="defaultCode.Text" xml:space="preserve">
-    <value>Default Code</value>
-  </data>
-  <data name="clearOutputToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="clearOutputToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clear Output</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 6</value>
-  </data>
-  <data name="tbRun.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
-  </data>
-  <data name="tbRun.Text" xml:space="preserve">
-    <value>Run</value>
-  </data>
-  <data name="tbExample.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
-  </data>
-  <data name="tbExample.Text" xml:space="preserve">
-    <value>Examples</value>
-  </data>
-  <data name="tbHelloWorld.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="tbHelloWorld.Text" xml:space="preserve">
-    <value>Hello Wolrd!</value>
-  </data>
-  <data name="tbHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
-  </data>
-  <data name="tbHelp.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 20</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>About</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-349, -139</value>
@@ -319,7 +319,7 @@ namespace LearningSpace
     <value>NoControl</value>
   </data>
   <data name="returnbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 58</value>
+    <value>133, 58</value>
   </data>
   <data name="returnbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -343,13 +343,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;returnbt.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="functionbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="functionbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 58</value>
+    <value>2, 58</value>
   </data>
   <data name="functionbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -373,7 +373,7 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;functionbt.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btn12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

@@ -69,9 +69,9 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(133, 130);
+            this.textBox1.Location = new System.Drawing.Point(133, 131);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 23);
+            this.textBox1.Size = new System.Drawing.Size(165, 23);
             this.textBox1.TabIndex = 2;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
             // 
@@ -79,7 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(313, 128);
+            this.label2.Location = new System.Drawing.Point(294, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 25);
             this.label2.TabIndex = 3;
