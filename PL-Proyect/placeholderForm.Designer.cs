@@ -41,7 +41,6 @@ namespace PL_Proyect
             this.label1.Size = new System.Drawing.Size(180, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "There\'s nothing to see here... yet.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // placeholderForm
             // 
