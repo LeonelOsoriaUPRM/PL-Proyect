@@ -19,5 +19,19 @@
 
 
         }
+        public static int GetUnaryBinOpPrecedence(this TypeOfSyntax Type)
+        {
+            switch (Type)
+            {
+                case TypeOfSyntax.SumToken:
+                case TypeOfSyntax.SubToken:
+                    return 3;
+                default:
+                    return 0;
+
+            }
+
+
+        }
     }
 }

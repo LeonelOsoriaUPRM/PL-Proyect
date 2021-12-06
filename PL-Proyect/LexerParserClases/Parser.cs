@@ -68,7 +68,19 @@ namespace PL_Proyect.LexerParserClases
         }
         private EvalSyntax ParseExpress(int parentPrecedence = 0)
         {
-            var left = FirstExpEval();
+            EvalSyntax left;
+            
+            var unaryOpPrecedence = CurrentP.Type.GetUnaryBinOpPrecedence();
+            if(unaryOpPrecedence != 0 && unaryOpPrecedence >= parentPrecedence)
+            {
+                var oppToken = NextToken();
+                var opperand = ParseExpress(unaryOpPrecedence);
+                left = new UnaryEvalSyntxBinary(oppToken, opperand);
+            }
+            else
+            {
+                left = FirstExpEval();
+            }
 
             while (true)
             {

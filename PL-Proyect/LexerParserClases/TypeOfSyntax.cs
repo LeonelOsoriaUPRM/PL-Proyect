@@ -20,6 +20,8 @@
         //Expressions list
         EvalNumber,
         BinaryEvaluator,
-        ParenExpressSntx
+        UnaryBinaryEvaluator,
+        ParenExpressSntx,
+        
     }
 }
