@@ -30,7 +30,7 @@ namespace PL_Proyect.LexerParserClases
                     return opperand;
                 }else if(u.OperatorToken.Type == TypeOfSyntax.SubToken)
                 {
-                    return opperand;
+                    return -opperand;
                 }else
                     throw new Exception($"Unexpected unary operator {u.OperatorToken.Type}");
             }
