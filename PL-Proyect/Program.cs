@@ -15,13 +15,13 @@ namespace PL_Proyect
         [STAThread]
         private static void Main(string[] args)
         {
-            
+            /*
             Console.WriteLine("Hello World, we're making a compiler baby!");
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TestForm());
-            
+            */
             var showTree = false;
             while (true)
             {

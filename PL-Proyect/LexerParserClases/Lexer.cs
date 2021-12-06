@@ -66,37 +66,29 @@ namespace PL_Proyect.LexerParserClases
                 int.TryParse(textString, out var value);
                 return new SntxToken(TypeOfSyntax.WhtSpToken, begining, textString, null);
             }
-            if (CurrentP == '+')
+
+            switch (CurrentP)
             {
-                return new SntxToken(TypeOfSyntax.SumToken, this.currentPos++, "+", null);
-            }
-            else if (CurrentP == '-')
-            {
-                return new SntxToken(TypeOfSyntax.SubToken, this.currentPos++, "-", null);
-            }
-            else if (CurrentP == '/')
-            {
-                return new SntxToken(TypeOfSyntax.DivToken, this.currentPos++, "/", null);
-            }
-            else if (CurrentP == '*')
-            {
-                return new SntxToken(TypeOfSyntax.MultToken, this.currentPos++, "*", null);
-            }
-            else if (CurrentP == '=')
-            {
-                return new SntxToken(TypeOfSyntax.EqToken, this.currentPos++, "=", null);
-            }
-            else if (CurrentP == '(')
-            {
-                return new SntxToken(TypeOfSyntax.LftParToken, this.currentPos++, "(", null);
-            }
-            else if (CurrentP == ')')
-            {
-                return new SntxToken(TypeOfSyntax.RgtParToken, this.currentPos++, ")", null);
+                case '+':
+                    return new SntxToken(TypeOfSyntax.SumToken, this.currentPos++, "+", null);
+                case '-':
+                    return new SntxToken(TypeOfSyntax.SubToken, this.currentPos++, "-", null);
+                case '/':
+                    return new SntxToken(TypeOfSyntax.SubToken, this.currentPos++, "-", null);
+                case '*':
+                    return new SntxToken(TypeOfSyntax.MultToken, this.currentPos++, "*", null);
+                case '=':
+                    return new SntxToken(TypeOfSyntax.EqToken, this.currentPos++, "=", null);
+                case '(':
+                    return new SntxToken(TypeOfSyntax.LftParToken, this.currentPos++, "(", null);
+                case ')':
+                    return new SntxToken(TypeOfSyntax.RgtParToken, this.currentPos++, ")", null);
+
+
             }
             this.diagnostics.Add($"ERROR: Unrecognized Character On Input Stream: '{this.currentPos}'");
             return new SntxToken(TypeOfSyntax.NotReconToken, this.currentPos++, this.textString.Substring(this.currentPos - 1, 1), null);
-
+            
         }
 
 

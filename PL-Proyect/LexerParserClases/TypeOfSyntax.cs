@@ -2,6 +2,9 @@
 {
     public enum TypeOfSyntax
     {
+        //token list
+        NotReconToken,
+        FileEndToken,
         NumToken,
         WhtSpToken,
         SumToken,
@@ -10,9 +13,11 @@
         MultToken,
         LftParToken,
         RgtParToken,
-        NotReconToken,
-        FileEndToken,
+
+        //??
         EqToken,
+
+        //Expressions list
         EvalNumber,
         BinaryEvaluator,
         ParenExpressSntx

@@ -47,7 +47,7 @@ namespace PL_Proyect.LexerParserClases
             this.tokenPos++;
             return currentP;
         }
-        private SntxToken Match(TypeOfSyntax Type)
+        private SntxToken MatchToken(TypeOfSyntax Type)
         {
             if (CurrentP.Type == Type)
             {
@@ -62,54 +62,57 @@ namespace PL_Proyect.LexerParserClases
 
         public SntxTree Parse()
         {
-            var espress = ParseTerm();
-            var FileEndToken = Match(TypeOfSyntax.FileEndToken);
+            var espress = ParseExpress();
+            var FileEndToken = MatchToken(TypeOfSyntax.FileEndToken);
             return new SntxTree(this.diagnostics, espress, FileEndToken);
         }
-        private EvalSyntax ParseTerm()
+        private EvalSyntax ParseExpress(int parentPrecedence = 0)
         {
-            var leftSyn = ParseFactor();
+            var left = FirstExpEval();
 
-            while (CurrentP.Type == TypeOfSyntax.SubToken || CurrentP.Type == TypeOfSyntax.SumToken)
+            while (true)
             {
+                var precedence = GetBinOpPrecedence(CurrentP.Type);
+                if (precedence == 0 || precedence <= parentPrecedence)
+                    break;
+
                 var opToken = NextToken();
-                var rightSyn = ParseFactor();
-                leftSyn = new EvalSyntxBinary(leftSyn, opToken, rightSyn);
+                var right = ParseExpress(precedence);
+                left = new EvalSyntxBinary(left, opToken, right);
             }
-            return leftSyn;
+            return left;
         }
-        private EvalSyntax ParseFactor()
+        private static int GetBinOpPrecedence( TypeOfSyntax Type)
         {
-            var leftSyn = FirstExpEval();
-
-            while (CurrentP.Type == TypeOfSyntax.MultToken || CurrentP.Type == TypeOfSyntax.DivToken)
+            switch (Type)
             {
-                var opToken = NextToken();
-                var rightSyn = FirstExpEval();
-                leftSyn = new EvalSyntxBinary(leftSyn, opToken, rightSyn);
+                case TypeOfSyntax.SumToken:
+                case TypeOfSyntax.SubToken:
+                    return 1;
+                case TypeOfSyntax.MultToken:
+                case TypeOfSyntax.DivToken:
+                    return 2;
+                default:
+                    return 0;   
+
             }
-            return leftSyn;
-        }
+                
 
-
-
+        } 
+        
+       
         private EvalSyntax FirstExpEval()
         {
             if (CurrentP.Type == TypeOfSyntax.LftParToken)
             {
                 var left = NextToken();
                 var express = ParseExpress();
-                var right = Match(TypeOfSyntax.RgtParToken);
+                var right = MatchToken(TypeOfSyntax.RgtParToken);
                 return new ParenExpressSntx(left, express, right);
             }
 
-            var numToken = Match(TypeOfSyntax.NumToken);
+            var numToken = MatchToken(TypeOfSyntax.NumToken);
             return new NumEvalSyntx(numToken);
-        }
-
-        private EvalSyntax ParseExpress()
-        {
-            return ParseTerm();
         }
     }
 }
