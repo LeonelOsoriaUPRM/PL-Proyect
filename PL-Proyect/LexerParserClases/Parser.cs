@@ -72,7 +72,7 @@ namespace PL_Proyect.LexerParserClases
 
             while (true)
             {
-                var precedence = GetBinOpPrecedence(CurrentP.Type);
+                var precedence = CurrentP.Type.GetBinOpPrecedence();
                 if (precedence == 0 || precedence <= parentPrecedence)
                     break;
 
@@ -82,23 +82,7 @@ namespace PL_Proyect.LexerParserClases
             }
             return left;
         }
-        private static int GetBinOpPrecedence( TypeOfSyntax Type)
-        {
-            switch (Type)
-            {
-                case TypeOfSyntax.SumToken:
-                case TypeOfSyntax.SubToken:
-                    return 1;
-                case TypeOfSyntax.MultToken:
-                case TypeOfSyntax.DivToken:
-                    return 2;
-                default:
-                    return 0;   
-
-            }
-                
-
-        } 
+       
         
        
         private EvalSyntax FirstExpEval()
