@@ -25,13 +25,14 @@ namespace PL_Proyect.LexerParserClases
             }if(node is UnaryEvalSyntxBinary u)
             {
                 var opperand = EvaluateExpress(u.Opperand);
-                if (u.Opperand.Type == TypeOfSyntax.SubToken)
-                    return -opperand;
-                else if(u.Opperand.Type == TypeOfSyntax.SubToken)
+                if (u.OperatorToken.Type == TypeOfSyntax.SumToken)
+                {
+                    return opperand;
+                }else if(u.OperatorToken.Type == TypeOfSyntax.SubToken)
                 {
                     return opperand;
                 }else
-                    throw new Exception($"Unexpected unary operator {u.Opperand.Type}");
+                    throw new Exception($"Unexpected unary operator {u.OperatorToken.Type}");
             }
             if (node is EvalSyntxBinary b)
             {

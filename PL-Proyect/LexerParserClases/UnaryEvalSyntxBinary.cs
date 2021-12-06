@@ -4,15 +4,17 @@ namespace PL_Proyect.LexerParserClases
 {
     public sealed class UnaryEvalSyntxBinary : EvalSyntax
     {
-        public UnaryEvalSyntxBinary(SntxToken evaluator, EvalSyntax opperand)
+        public UnaryEvalSyntxBinary(SntxToken operatorToken, EvalSyntax opperand)
         {
             
-            Evaluator = evaluator;
+            ;
+            OperatorToken = operatorToken;
             Opperand = opperand;
         }
 
       
-        public SntxToken Evaluator { get; }
+      
+        public SntxToken OperatorToken { get; }
         public EvalSyntax Opperand { get; }
 
         public override TypeOfSyntax Type => TypeOfSyntax.UnaryBinaryEvaluator;
@@ -20,7 +22,7 @@ namespace PL_Proyect.LexerParserClases
         public override IEnumerable<SntxNode> GetChildren()
         {
          
-            yield return Evaluator;
+            yield return OperatorToken;
             yield return Opperand;
         }
     }
