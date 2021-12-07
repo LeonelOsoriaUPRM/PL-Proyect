@@ -19,5 +19,36 @@ namespace PL_Proyect
         {
             TestForm.caseForm = null;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == string.Empty)
+            {
+                Clipboard.SetText("default:\n\t\t\t//Place code for default case here\n\t\t\t\t\n\t\t\tbreak;");
+                this.Close();
+            }
+            else
+            {
+                Clipboard.SetText("case " + textBox1.Text + ":\n\t\t\t//Place code for this case here\n\t\t\t\t\n\t\t\tbreak;");
+                this.Close();
+            }
+        }
+
+        private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                if (textBox1.Text == string.Empty)
+                {
+                    Clipboard.SetText("default:\n\t\t\t//Place code for default case here\n\t\t\t\t\n\t\t\tbreak;");
+                    this.Close();
+                }
+                else
+                {
+                    Clipboard.SetText("case " + textBox1.Text + ":\n\t\t\t//Place code for this case here\n\t\t\t\t\n\t\t\tbreak;");
+                    this.Close();
+                }
+            }
+        }
     }
 }

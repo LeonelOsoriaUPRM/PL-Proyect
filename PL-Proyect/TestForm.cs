@@ -28,20 +28,17 @@ namespace PL_Proyect
         public static switchForm switchForm = null;
         public static variableForm variableForm = null;
         public static whileForm whileForm = null;
+        public static defaultSwitchForm defaultSwitchForm = null;
 
         public TestForm()
         {
             InitializeComponent();
+            codeInTextPanel.EnableContextMenu();
             ConsoleWrite("Click the \"help\" tab for instructions on how this program works");
             ConsoleWrite("Click the \"example\" tab to see example programs");
         }
 
         private void TestForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void entryField_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -78,25 +75,17 @@ namespace PL_Proyect
             aboutForm.Show();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbHelp_Click(object sender, EventArgs e)
         {
             helpForm help = new helpForm();
             help.Show();
         }
 
-        private void codeInTextPanel_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
+            //
+            //Mark for deletion if safe
+            //
         }
 
         private void defaultCodeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -113,6 +102,31 @@ namespace PL_Proyect
             outputScreen.AppendText(s+"\n");
         }
 
+        private void ValueWrite(string s, int t)
+        {
+            outputScreen.SelectionColor = Color.Green;
+            switch (t)
+            {
+                case 1:
+                    //boolean
+                    break;
+
+                case 2:
+                    //int
+                    break;
+
+                case 3:
+                    //double
+                    break;
+                
+                default:
+                    //string
+                    break;
+            }
+            //s = ">" + s;
+            //outputScreen.AppendText(s + "\n");
+        }
+
         private void UserWrite(string s)
         {
             outputScreen.SelectionColor = Color.Red;
@@ -125,22 +139,9 @@ namespace PL_Proyect
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-
-        }
-
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ConsoleWrite("To undo please press Ctrl+Z, this also works on most apps!");
-        }
-
-        private void redoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ConsoleWrite("To redo please press Ctrl+Y, this also works on most apps!");
-        }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
+            //
+            //Mark for deletion if safe
+            //
         }
 
         private void printTextBt_Click(object sender, EventArgs e)
@@ -155,6 +156,7 @@ namespace PL_Proyect
                 printTextForm.BringToFront();
             }
         }
+        
 
         private void printValuebtn_Click(object sender, EventArgs e)
         {
@@ -316,20 +318,25 @@ namespace PL_Proyect
 
         private void btn12_Click(object sender, EventArgs e)
         {
-            if (placeholderForm == null)
+            if (defaultSwitchForm == null)
             {
-                placeholderForm = new placeholderForm();
-                placeholderForm.Show();
+                defaultSwitchForm = new defaultSwitchForm();
+                defaultSwitchForm.Show();
             }
             else
             {
-                placeholderForm.BringToFront();
+                defaultSwitchForm.BringToFront();
             }
         }
 
         private void tbRun_Click(object sender, EventArgs e)
         {
             ConsoleWrite("I'm sorry, I can't do that yet");
+        }
+
+        private void clearOutputToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            outputScreen.Text = "";
         }
     }
 }
