@@ -12,6 +12,7 @@ namespace PL_Proyect
         [STAThread]
         static void Main(string[] args)
         {
+            //Obsolete Branch!
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
