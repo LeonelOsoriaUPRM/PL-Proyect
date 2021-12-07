@@ -15,7 +15,7 @@ namespace PL_Proyect
         [STAThread]
         private static void Main(string[] args)
         {
-            
+            //Obsolete Branch!
             Console.WriteLine("Hello World, we're making a compiler baby!");
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
