@@ -18,6 +18,8 @@ namespace BabyCsharpProject
         bool c = false;
         string Output = "";
 
+        public static List<string> userVariables = new List<string> { };
+
         public static placeholderForm placeholderForm = null;
         public static aboutForm aboutFrom = null;
         public static breakForm breakForm = null;

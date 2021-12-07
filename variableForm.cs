@@ -119,11 +119,13 @@ namespace BabyCsharpProject
             {
                 if(t == "string ")
                 {
+                    TestForm.userVariables.Add(textBox1.Text);
                     Clipboard.SetText(t + textBox1.Text + " = \"\";");
                     this.Close();
                 }
                 else
                 {
+                    TestForm.userVariables.Add(textBox1.Text);
                     Clipboard.SetText(t + textBox1.Text + ";");
                     this.Close();
                 }
@@ -132,6 +134,7 @@ namespace BabyCsharpProject
 
             else if(!(textBox2.Text == string.Empty) && a)
             {
+                TestForm.userVariables.Add(textBox1.Text);
                 Clipboard.SetText(t + textBox1.Text + " = " + textBox2.Text+";");
                 this.Close();
             }

@@ -44,9 +44,9 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(10, 10);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(410, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(406, 83);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "Explain the loop of the while\n\n\n\n\n\n0";
             // 
@@ -54,8 +54,8 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(2, 114);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label1.Location = new System.Drawing.Point(5, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 25);
             this.label1.TabIndex = 1;
@@ -64,9 +64,9 @@
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.Location = new System.Drawing.Point(67, 116);
+            this.textBox1.Location = new System.Drawing.Point(68, 109);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.Size = new System.Drawing.Size(86, 20);
             this.textBox1.TabIndex = 2;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
             // 
@@ -74,8 +74,8 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(163, 114);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label2.Location = new System.Drawing.Point(150, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(275, 25);
             this.label2.TabIndex = 3;
@@ -85,9 +85,9 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.button1.Location = new System.Drawing.Point(12, 142);
+            this.button1.Location = new System.Drawing.Point(10, 132);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 23);
+            this.button1.Size = new System.Drawing.Size(51, 22);
             this.button1.TabIndex = 4;
             this.button1.Text = "copy";
             this.button1.UseVisualStyleBackColor = true;
@@ -95,12 +95,12 @@
             // 
             // whileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(434, 173);
+            this.ClientSize = new System.Drawing.Size(427, 159);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);

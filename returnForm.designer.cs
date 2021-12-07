@@ -42,10 +42,10 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.richTextBox1.Location = new System.Drawing.Point(13, 13);
+            this.richTextBox1.Location = new System.Drawing.Point(11, 11);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(409, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(351, 83);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "Explanation of how returns work and how they\'re used\n\n\n\n\n\n0";
             // 
@@ -53,8 +53,8 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(13, 116);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label1.Location = new System.Drawing.Point(11, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 25);
             this.label1.TabIndex = 1;
@@ -63,9 +63,9 @@
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.Location = new System.Drawing.Point(78, 117);
+            this.textBox1.Location = new System.Drawing.Point(76, 102);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.Size = new System.Drawing.Size(86, 20);
             this.textBox1.TabIndex = 2;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
             // 
@@ -73,8 +73,8 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(174, 116);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label2.Location = new System.Drawing.Point(159, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 25);
             this.label2.TabIndex = 3;
@@ -84,9 +84,9 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(196, 118);
+            this.button1.Location = new System.Drawing.Point(181, 101);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 23);
+            this.button1.Size = new System.Drawing.Size(41, 20);
             this.button1.TabIndex = 4;
             this.button1.Text = "copy";
             this.button1.UseVisualStyleBackColor = true;
@@ -94,12 +94,12 @@
             // 
             // returnForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(434, 151);
+            this.ClientSize = new System.Drawing.Size(372, 131);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
