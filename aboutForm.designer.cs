@@ -35,21 +35,24 @@ namespace BabyCsharpProject
             // 
             // aboutTextBox
             // 
-            this.aboutTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.aboutTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.aboutTextBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.aboutTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aboutTextBox.Location = new System.Drawing.Point(0, 0);
             this.aboutTextBox.Name = "aboutTextBox";
             this.aboutTextBox.ReadOnly = true;
-            this.aboutTextBox.Size = new System.Drawing.Size(291, 234);
+            this.aboutTextBox.Size = new System.Drawing.Size(286, 234);
             this.aboutTextBox.TabIndex = 0;
             this.aboutTextBox.Text = resources.GetString("aboutTextBox.Text");
             // 
             // aboutForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(291, 234);
+            this.ClientSize = new System.Drawing.Size(285, 234);
             this.Controls.Add(this.aboutTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

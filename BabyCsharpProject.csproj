@@ -76,6 +76,7 @@
     <Compile Include="elseForm.designer.cs">
       <DependentUpon>elseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Examples.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="forForm.cs">
       <SubType>Form</SubType>
@@ -215,6 +216,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="returnForm.resx">
       <DependentUpon>returnForm.cs</DependentUpon>
@@ -240,6 +242,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="querylanguage.g4" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

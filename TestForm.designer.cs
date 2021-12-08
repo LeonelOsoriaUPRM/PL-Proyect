@@ -69,6 +69,7 @@ namespace BabyCsharpProject
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.abcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
@@ -161,7 +162,8 @@ namespace BabyCsharpProject
             // tbExample
             // 
             this.tbExample.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tbHelloWorld});
+            this.tbHelloWorld,
+            this.abcToolStripMenuItem});
             this.tbExample.Name = "tbExample";
             resources.ApplyResources(this.tbExample, "tbExample");
             // 
@@ -360,6 +362,12 @@ namespace BabyCsharpProject
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             // 
+            // abcToolStripMenuItem
+            // 
+            this.abcToolStripMenuItem.Name = "abcToolStripMenuItem";
+            resources.ApplyResources(this.abcToolStripMenuItem, "abcToolStripMenuItem");
+            this.abcToolStripMenuItem.Click += new System.EventHandler(this.abcToolStripMenuItem_Click);
+            // 
             // TestForm
             // 
             resources.ApplyResources(this, "$this");
@@ -427,6 +435,7 @@ namespace BabyCsharpProject
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ToolStripMenuItem buildToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abcToolStripMenuItem;
     }
 }
 
