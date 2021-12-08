@@ -108,21 +108,21 @@ namespace BabyCsharpProject
 
         private void defaultCodeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t}\n\t}\n}";
+            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t\tConsole.ReadLine();//This will output any Console.WriteLine commands in the code\n\t\t}\n\t}\n}";
         }
 
         //Custom functions start
 
         private void ConsoleWrite(string s)
         {
-            outputScreen.SelectionColor = Color.Green;
+            outputScreen.ForeColor = Color.Green;
             s = ">" + s;
             outputScreen.AppendText(s + "\n");
         }
 
         private void UserWrite(string s)
         {
-            outputScreen.SelectionColor = Color.Red;
+            outputScreen.ForeColor = Color.Red;
             s = "-" + s;
             outputScreen.AppendText(s + "\n");
             entryField.Text = "";

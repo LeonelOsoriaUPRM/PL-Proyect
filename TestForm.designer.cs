@@ -367,13 +367,13 @@ namespace BabyCsharpProject
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Controls.Add(this.codeInTextPanel);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.outputScreen);
             this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mainMenu);
-            this.Controls.Add(this.codeInTextPanel);
             this.Controls.Add(this.entryField);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.textBox1);
