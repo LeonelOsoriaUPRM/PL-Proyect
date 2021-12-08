@@ -17,12 +17,10 @@ namespace BabyCsharpProject
         private static void Main(string[] args)
         {
             
-            Console.WriteLine("Hello World, we're making a compiler baby!");
-            /*
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TestForm());
-            */
+            /*
             var showTree = false;
             while (true)
             {
@@ -86,6 +84,8 @@ namespace BabyCsharpProject
                     Console.WriteLine();
                 }*/
                 
+
+            }
 
             }
 
