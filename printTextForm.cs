@@ -10,6 +10,7 @@ namespace BabyCsharpProject
 {
     public partial class printTextForm : Form
     {
+        bool v = false;
         public printTextForm()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace BabyCsharpProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (((int.TryParse(textBox1.Text, out _))) || ((bool.TryParse(textBox1.Text, out _))) || ((double.TryParse(textBox1.Text, out _))) || TestForm.userVariables.Contains(textBox1.Text))
+            if (((int.TryParse(textBox1.Text, out _))) || ((bool.TryParse(textBox1.Text, out _))) || ((double.TryParse(textBox1.Text, out _))) || TestForm.userVariables.Contains(textBox1.Text) || v)
             {
                 Clipboard.SetText("Console.WriteLine(" + textBox1.Text + ");");
                 this.Close();
@@ -51,6 +52,15 @@ namespace BabyCsharpProject
             }
         
         }
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            v = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            v = false;
+        }
     }
 }
