@@ -40,6 +40,7 @@ namespace BabyCsharpProject
             this.defaultCode = new System.Windows.Forms.ToolStripMenuItem();
             this.clearOutputToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.buildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbRun = new System.Windows.Forms.ToolStripMenuItem();
             this.tbExample = new System.Windows.Forms.ToolStripMenuItem();
             this.tbHelloWorld = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +69,6 @@ namespace BabyCsharpProject
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
@@ -101,11 +101,13 @@ namespace BabyCsharpProject
             // 
             this.tbNew.Name = "tbNew";
             resources.ApplyResources(this.tbNew, "tbNew");
+            this.tbNew.Click += new System.EventHandler(this.tbNew_Click);
             // 
             // tbOpen
             // 
             this.tbOpen.Name = "tbOpen";
             resources.ApplyResources(this.tbOpen, "tbOpen");
+            this.tbOpen.Click += new System.EventHandler(this.tbOpen_Click);
             // 
             // toolStripSeparator1
             // 
@@ -143,6 +145,12 @@ namespace BabyCsharpProject
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            // 
+            // buildToolStripMenuItem
+            // 
+            this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
+            resources.ApplyResources(this.buildToolStripMenuItem, "buildToolStripMenuItem");
+            this.buildToolStripMenuItem.Click += new System.EventHandler(this.buildToolStripMenuItem_Click);
             // 
             // tbRun
             // 
@@ -353,12 +361,6 @@ namespace BabyCsharpProject
             // 
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            // 
-            // buildToolStripMenuItem
-            // 
-            this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
-            resources.ApplyResources(this.buildToolStripMenuItem, "buildToolStripMenuItem");
-            this.buildToolStripMenuItem.Click += new System.EventHandler(this.buildToolStripMenuItem_Click);
             // 
             // TestForm
             // 

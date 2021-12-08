@@ -121,11 +121,47 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tbNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="tbNew.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="tbOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="tbOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 6</value>
+  </data>
+  <data name="tbSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="tbSaveAs.Text" xml:space="preserve">
+    <value>SaveAs</value>
+  </data>
   <data name="tbFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 20</value>
   </data>
   <data name="tbFile.Text" xml:space="preserve">
     <value>File</value>
+  </data>
+  <data name="defaultCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="defaultCode.Text" xml:space="preserve">
+    <value>Default Code</value>
+  </data>
+  <data name="clearOutputToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="clearOutputToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clear Output</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 6</value>
   </data>
   <data name="tbEdit.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -144,6 +180,12 @@
   </data>
   <data name="tbRun.Text" xml:space="preserve">
     <value>Run</value>
+  </data>
+  <data name="tbHelloWorld.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="tbHelloWorld.Text" xml:space="preserve">
+    <value>Hello Wolrd!</value>
   </data>
   <data name="tbExample.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -191,48 +233,6 @@
   </data>
   <data name="&gt;&gt;mainMenu.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="tbNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="tbNew.Text" xml:space="preserve">
-    <value>New</value>
-  </data>
-  <data name="tbOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="tbOpen.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 6</value>
-  </data>
-  <data name="tbSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="tbSaveAs.Text" xml:space="preserve">
-    <value>SaveAs</value>
-  </data>
-  <data name="defaultCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="defaultCode.Text" xml:space="preserve">
-    <value>Default Code</value>
-  </data>
-  <data name="clearOutputToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="clearOutputToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clear Output</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 6</value>
-  </data>
-  <data name="tbHelloWorld.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="tbHelloWorld.Text" xml:space="preserve">
-    <value>Hello Wolrd!</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-299, -120</value>
@@ -3532,6 +3532,12 @@ namespace LearningSpace
   <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;buildToolStripMenuItem.Name" xml:space="preserve">
+    <value>buildToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;buildToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;tbRun.Name" xml:space="preserve">
     <value>tbRun</value>
   </data>
@@ -3560,12 +3566,6 @@ namespace LearningSpace
     <value>aboutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buildToolStripMenuItem.Name" xml:space="preserve">
-    <value>buildToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;buildToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
