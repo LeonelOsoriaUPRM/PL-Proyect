@@ -19,3 +19,11 @@ obj/Debug/BabyCsharpProject.csproj.FileListAbsolute.txt
 *.cache
 obj/Debug/BabyCsharpProject.exe
 obj/Debug/BabyCsharpProject.pdb
+.vs/BabyCsharpProject/v16/.suo
+.vs/BabyCsharpProject/v16/.suo
+.vs/slnx.sqlite
+bin/Debug/BabyCsharpProject.exe
+bin/Debug/BabyCsharpProject.pdb
+bin/Debug/Out.exe
+*.cache
+*.pdb

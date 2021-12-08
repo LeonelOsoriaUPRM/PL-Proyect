@@ -22,17 +22,35 @@ namespace BabyCsharpProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("Console.WriteLine(" + textBox1.Text + ");");
-            this.Close();
-        }
-
-        private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Return)
+            if (((int.TryParse(textBox1.Text, out _))) || ((bool.TryParse(textBox1.Text, out _))) || ((double.TryParse(textBox1.Text, out _))) || TestForm.userVariables.Contains(textBox1.Text))
             {
                 Clipboard.SetText("Console.WriteLine(" + textBox1.Text + ");");
                 this.Close();
             }
+            else
+            {
+                Clipboard.SetText("Console.WriteLine(\"" + textBox1.Text + "\");");
+                this.Close();
+            }
         }
+        
+        private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                if (((int.TryParse(textBox1.Text, out _))) || ((bool.TryParse(textBox1.Text, out _))) || ((double.TryParse(textBox1.Text, out _))) || TestForm.userVariables.Contains(textBox1.Text))
+                {
+                    Clipboard.SetText("Console.WriteLine(" + textBox1.Text + ");");
+                    this.Close();
+                }
+                else
+                {
+                    Clipboard.SetText("Console.WriteLine(\"" + textBox1.Text + "\");");
+                    this.Close();
+                }
+            }
+        
+        }
+        
     }
 }
