@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BabyCsharpProject.LexerParserClases
+namespace BabyCsharpProject.LexerParserClases.Syntax
 {
     public sealed class ParenExpressSntx : EvalSyntax
     {
