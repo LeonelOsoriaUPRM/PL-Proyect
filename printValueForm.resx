@@ -117,6 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>The Console.ReadLine(); statement that's on by default in the program isn't a catch all "open the console" command instead it's a command that tells the code to allow the user give input.
+If left alone like what you've seen it'll just open the console and leave it open until the user closes the console or presses enter.
+However in combination with a variable you can have the user give their input and have the program manipulate their entry.
+
+Example:
+
+Console.Write("Give me your name:");
+string name = Console.ReadLine();
+Console.Write("Hello " + name);
+
+NOTE: the input from a Console.ReadLine statement will always be a string to change into the other variable types we must convert them using the following commands:
+ConvertToInt32(Console.ReadLine());
+Convert.ToBoolean(Console.ReadLine());
+Convert.ToDouble(Console.ReadLine());
+Do not worry though, when you select the variable type this program will do the convertion for you!</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

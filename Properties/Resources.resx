@@ -161,25 +161,76 @@ namespace LearningSpace
 	{
 		static void Main(string[] args)
 		{
-Console.WriteLine("Enter option desired: \n	0, \n	1,\n	 2\n");
-	int number = Convert.ToInt32(Console.Read());
-	Switch(number)
-	{
-		case 0
-			Console.WriteLine("General Kenobi...");
-			break;
-		case 1
-			Console.WriteLine("Hi there what can I do for you?");	
-			break;
-		case 2
-			Console.WriteLine("So... How have you been?");
-			break;
-		default
-			Console.WiriteLine("Don't know what to do with this...");	
-	}
+            			Console.WriteLine("Enter option desired: \n\t0\n\t1\n\t2\n");
+          		 	int number = Convert.ToInt32(Console.ReadLine());
+
+            			switch (number)
+            			{
+               	 			case 0:
+               				     Console.WriteLine("General Kenobi...");
+				     Console.ReadLine();
+               				     break;
+
+                			case 1:
+                			     Console.WriteLine("Hi there what can I do for you?");
+			 	     Console.ReadLine();
+               				     break;
+
+               				case 2:
+                			    Console.WriteLine("So... How have you been?");
+				    Console.ReadLine();
+                			    break;
+
+                			default:
+              				     Console.WriteLine("Don't know what to do with this...");
+				     Console.ReadLine();
+               				     break;
+            			}
 		}
 	}
-}
-</value>
+}</value>
+  </data>
+  <data name="MathExample" xml:space="preserve">
+    <value>using System;
+
+namespace LearningSpace
+{
+	static class Program
+	{
+		static void Main(string[] args)
+		{
+			//Your code goes here!
+			int a = 4;
+			int b = 3;
+			int c = a/b;
+			int d = a%b;
+			int e = (a+b*2)/(a-b);
+			double z = 124.6423;
+			double y = 3057.023751;
+			double x = b/a;
+			Console.Write("a = "+a+"\nb= "+b+"\nc= "+c+"\nd= "+d+"\ne= "+e+"\nz= "+z+"\ny= "+y+"\nz= "+z);
+			Console.ReadLine();//This will output any Console.WriteLine commands in the code
+		}
+	}
+}</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>using System;
+
+namespace LearningSpace
+{
+	static class Program
+	{
+		static void Main(string[] args)
+		{
+			//Your code goes here!
+			
+			Console.Write("Give me your name:");
+			string name = Console.ReadLine();
+			Console.Write("Hello " + name);
+			Console.ReadLine();
+		}
+	}
+}</value>
   </data>
 </root>

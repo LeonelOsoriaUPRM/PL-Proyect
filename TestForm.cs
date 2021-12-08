@@ -433,18 +433,32 @@ namespace BabyCsharpProject
             codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t\tConsole.ReadLine();//This will output any Console.WriteLine commands in the code\n\t\t}\n\t}\n}";
         }
 
-        private void abcToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            outputScreen.Text = "";
-            ConsoleWrite("If you're ever confused as to why something isn't working load up a few examples, you might find a solution there");
-            codeInTextPanel.Text = Properties.Resources.a_b_Text;
-        }
-
         private void forExampleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             outputScreen.Text = "";
             ConsoleWrite("If you're ever confused as to why something isn't working load up a few examples, you might find a solution there");
             codeInTextPanel.Text = Properties.Resources.Kenobi;
+        }
+
+        private void mathExampleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            outputScreen.Text = "";
+            ConsoleWrite("If you're ever confused as to why something isn't working load up a few examples, you might find a solution there");
+            codeInTextPanel.Text = Properties.Resources.MathExample;
+        }
+
+        private void nameEntryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            outputScreen.Text = "";
+            ConsoleWrite("If you're ever confused as to why something isn't working load up a few examples, you might find a solution there");
+            codeInTextPanel.Text = Properties.Resources.Name;
+        }
+
+        private void printExampleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            outputScreen.Text = "";
+            ConsoleWrite("If you're ever confused as to why something isn't working load up a few examples, you might find a solution there");
+            codeInTextPanel.Text = Properties.Resources.a_b_Text;
         }
     }
 }

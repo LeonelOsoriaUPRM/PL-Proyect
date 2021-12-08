@@ -116,25 +116,77 @@ namespace BabyCsharpProject.Properties {
         ///	{
         ///		static void Main(string[] args)
         ///		{
-        ///Console.WriteLine(&quot;Enter option desired: \n	0, \n	1,\n	 2\n&quot;);
-        ///	int number = Convert.ToInt32(Console.Read());
-        ///	Switch(number)
-        ///	{
-        ///		case 0
-        ///			Console.WriteLine(&quot;General Kenobi...&quot;);
-        ///			break;
-        ///		case 1
-        ///			Console.WriteLine(&quot;Hi there what can I do for you?&quot;);	
-        ///			break;
-        ///		case 2
-        ///			Console.WriteLine(&quot;So... How have you been?&quot;);
-        ///			break;
-        ///		default
-        ///			Console.WiriteLine(&quot;Don&apos;t know what  [rest of string was truncated]&quot;;.
+        ///            			Console.WriteLine(&quot;Enter option desired: \n\t0\n\t1\n\t2\n&quot;);
+        ///          		 	int number = Convert.ToInt32(Console.ReadLine());
+        ///
+        ///            			switch (number)
+        ///            			{
+        ///               	 			case 0:
+        ///               				     Console.WriteLine(&quot;General Kenobi...&quot;);
+        ///				     Console.ReadLine();
+        ///               				     break;
+        ///
+        ///                			case 1:
+        ///                			 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Kenobi {
             get {
                 return ResourceManager.GetString("Kenobi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///
+        ///namespace LearningSpace
+        ///{
+        ///	static class Program
+        ///	{
+        ///		static void Main(string[] args)
+        ///		{
+        ///			//Your code goes here!
+        ///			int a = 4;
+        ///			int b = 3;
+        ///			int c = a/b;
+        ///			int d = a%b;
+        ///			int e = (a+b*2)/(a-b);
+        ///			double z = 124.6423;
+        ///			double y = 3057.023751;
+        ///			double x = b/a;
+        ///			Console.Write(&quot;a = &quot;+a+&quot;\nb= &quot;+b+&quot;\nc= &quot;+c+&quot;\nd= &quot;+d+&quot;\ne= &quot;+e+&quot;\nz= &quot;+z+&quot;\ny= &quot;+y+&quot;\nz= &quot;+z);
+        ///			Console.ReadLine();//This will output any Console.WriteLine commands in the code
+        ///		}
+        ///	}
+        ///}.
+        /// </summary>
+        internal static string MathExample {
+            get {
+                return ResourceManager.GetString("MathExample", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///
+        ///namespace LearningSpace
+        ///{
+        ///	static class Program
+        ///	{
+        ///		static void Main(string[] args)
+        ///		{
+        ///			//Your code goes here!
+        ///			
+        ///			Console.Write(&quot;Give me your name:&quot;);
+        ///			string name = Console.ReadLine();
+        ///			Console.Write(&quot;Hello &quot; + name);
+        ///			Console.ReadLine();
+        ///		}
+        ///	}
+        ///}.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
             }
         }
     }

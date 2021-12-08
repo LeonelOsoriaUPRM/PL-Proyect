@@ -182,22 +182,34 @@
     <value>Run</value>
   </data>
   <data name="tbHelloWorld.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>182, 22</value>
   </data>
   <data name="tbHelloWorld.Text" xml:space="preserve">
     <value>Hello Wolrd!</value>
   </data>
-  <data name="abcToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="printExampleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
   </data>
-  <data name="abcToolStripMenuItem.Text" xml:space="preserve">
-    <value>a+b=c</value>
+  <data name="printExampleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Print Example</value>
+  </data>
+  <data name="nameEntryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="nameEntryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Input Example</value>
+  </data>
+  <data name="mathExampleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="mathExampleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Math Example</value>
   </data>
   <data name="forExampleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>182, 22</value>
   </data>
   <data name="forExampleToolStripMenuItem.Text" xml:space="preserve">
-    <value>For Example</value>
+    <value>SwitchCase Example</value>
   </data>
   <data name="tbExample.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -3571,10 +3583,28 @@ namespace LearningSpace
   <data name="&gt;&gt;tbHelloWorld.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;abcToolStripMenuItem.Name" xml:space="preserve">
-    <value>abcToolStripMenuItem</value>
+  <data name="&gt;&gt;forExampleToolStripMenuItem.Name" xml:space="preserve">
+    <value>forExampleToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;abcToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;forExampleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameEntryToolStripMenuItem.Name" xml:space="preserve">
+    <value>nameEntryToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;nameEntryToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mathExampleToolStripMenuItem.Name" xml:space="preserve">
+    <value>mathExampleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;mathExampleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;printExampleToolStripMenuItem.Name" xml:space="preserve">
+    <value>printExampleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;printExampleToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbHelp.Name" xml:space="preserve">
@@ -3587,12 +3617,6 @@ namespace LearningSpace
     <value>aboutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;forExampleToolStripMenuItem.Name" xml:space="preserve">
-    <value>forExampleToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;forExampleToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

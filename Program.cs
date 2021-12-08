@@ -15,8 +15,7 @@ namespace BabyCsharpProject
     {
         [STAThread]
         private static void Main(string[] args)
-        {
-            //if I dont change anything it wont let me make a commit   
+        {  
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TestForm());
