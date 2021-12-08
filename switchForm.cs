@@ -33,5 +33,10 @@ namespace BabyCsharpProject
                 this.Close();
             }
         }
+
+        private void switchForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

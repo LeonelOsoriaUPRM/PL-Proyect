@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox2.Text" xml:space="preserve">
-    <value>Whatever code is inside an "If" statement will only run if the condition is TRUE.
+    <value>The code within an "If" statement will only run if the condition given is TRUE.
 
-The "If" statement is one of the most important building blocks in programming as they are the simplest way to add automatic decision making to our programs.
+The "If" statement is one of the most important building blocks in programming as they are the simplest way to add decision making to our programs.
 
 Conditions are statements that are either true or false.  They can be boolean variables and they can also be comparison between two values using the "=="(equal to) and "!="(NOT equal to), both of which can be a variable.  Multiple comparisons can be added to a condition via the use of the "&amp;&amp;"(and) and "||"(or) expressions.
 
@@ -138,7 +138,33 @@ You can use parentesis "()" like they'd be used in math.
 
 (A==B || A==C) &amp;&amp; D == C for this condition to be true D==C must be true and either A==B or A==C must be true.
 
-"A&lt;B" "A&gt;B" "A&lt;=B" "A&gt;=B" are all also valid comparisons, they work as you'd expect.</value>
+"A&lt;B" "A&gt;B" "A&lt;=B" "A&gt;=B" are all also valid comparisons, they work as you'd expect.
+
+It is posible to create a chain of If statements to check multiple conditions, one after the other. 
+It is highly recommended that the Chain end with an else statement, meaning, if all previous conditions are false do this instead.
+Example:
+	if(this == TRUE){
+		//body of if statement
+	}
+	if(then_that ==TRUE){
+		//body of if statement
+	}
+	.
+	.
+	.
+	else{
+		// do this instead
+	}
+
+You can also nest if statements, so you have the ability to check another condition if a previous one is True
+
+Example:
+	if(is_this ==TRUE){
+		if(is_this_Also == TRUE){
+			// Do this
+		}
+		//Do this instead
+	}</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
