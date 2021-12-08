@@ -188,7 +188,6 @@ namespace BabyCsharpProject
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // outputScreen
             // 
@@ -343,7 +342,6 @@ namespace BabyCsharpProject
             this.buttonPanel.Controls.Add(this.functionbt);
             this.buttonPanel.Controls.Add(this.returnbt);
             this.buttonPanel.Name = "buttonPanel";
-            this.buttonPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // button1
             // 
@@ -367,20 +365,19 @@ namespace BabyCsharpProject
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Controls.Add(this.codeInTextPanel);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.outputScreen);
             this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mainMenu);
-            this.Controls.Add(this.codeInTextPanel);
             this.Controls.Add(this.entryField);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.textBox1);
             this.ForeColor = System.Drawing.Color.Black;
             this.MainMenuStrip = this.mainMenu;
             this.Name = "TestForm";
-            this.Load += new System.EventHandler(this.TestForm_Load);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
             this.buttonPanel.ResumeLayout(false);

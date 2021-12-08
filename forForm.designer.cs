@@ -219,7 +219,6 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "//Place code to be looped here }";
             this.label6.Visible = false;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -232,7 +231,6 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "){";
             this.label7.Visible = false;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -245,7 +243,6 @@
             this.label8.TabIndex = 17;
             this.label8.Text = ";";
             this.label8.Visible = false;
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox3
             // 
@@ -255,7 +252,6 @@
             this.textBox3.Size = new System.Drawing.Size(73, 20);
             this.textBox3.TabIndex = 16;
             this.textBox3.Visible = false;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress1);
             // 
             // label9
@@ -269,7 +265,6 @@
             this.label9.TabIndex = 14;
             this.label9.Text = ";";
             this.label9.Visible = false;
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // textBox4
             // 
@@ -279,7 +274,6 @@
             this.textBox4.Size = new System.Drawing.Size(73, 20);
             this.textBox4.TabIndex = 13;
             this.textBox4.Visible = false;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress1);
             // 
             // label10
@@ -294,7 +288,6 @@
             this.label10.TabIndex = 12;
             this.label10.Text = "for( ";
             this.label10.Visible = false;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // textBox5
             // 
@@ -304,7 +297,6 @@
             this.textBox5.Size = new System.Drawing.Size(73, 20);
             this.textBox5.TabIndex = 22;
             this.textBox5.Visible = false;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress1);
             // 
             // errorLabel1
@@ -366,7 +358,6 @@
             this.Name = "forForm";
             this.Text = "For Loop";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.forForm_FormClosed);
-            this.Load += new System.EventHandler(this.forForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
