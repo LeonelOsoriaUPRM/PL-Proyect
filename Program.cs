@@ -85,12 +85,12 @@ namespace BabyCsharpProject
                 }*/
                 
 
-            }
+         }
 
-            }
+     }
 
-        }
-
+}
+/*
         static void TreetyPrint(SntxNode node, string level = "", bool isLast = true)
         {
             var marker = isLast ? "|__" : "|--";
@@ -117,3 +117,4 @@ namespace BabyCsharpProject
         }
     }
 }
+*/

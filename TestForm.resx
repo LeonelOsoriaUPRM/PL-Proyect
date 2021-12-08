@@ -193,6 +193,12 @@
   <data name="abcToolStripMenuItem.Text" xml:space="preserve">
     <value>a+b=c</value>
   </data>
+  <data name="forExampleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="forExampleToolStripMenuItem.Text" xml:space="preserve">
+    <value>For Example</value>
+  </data>
   <data name="tbExample.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
   </data>
@@ -3565,6 +3571,12 @@ namespace LearningSpace
   <data name="&gt;&gt;tbHelloWorld.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;abcToolStripMenuItem.Name" xml:space="preserve">
+    <value>abcToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;abcToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;tbHelp.Name" xml:space="preserve">
     <value>tbHelp</value>
   </data>
@@ -3577,10 +3589,10 @@ namespace LearningSpace
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;abcToolStripMenuItem.Name" xml:space="preserve">
-    <value>abcToolStripMenuItem</value>
+  <data name="&gt;&gt;forExampleToolStripMenuItem.Name" xml:space="preserve">
+    <value>forExampleToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;abcToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;forExampleToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

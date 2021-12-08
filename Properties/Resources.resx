@@ -152,4 +152,34 @@ namespace LearningSpace
 	}
 }</value>
   </data>
+  <data name="Kenobi" xml:space="preserve">
+    <value>using System;
+
+namespace LearningSpace
+{
+	static class Program
+	{
+		static void Main(string[] args)
+		{
+Console.WriteLine("Enter option desired: \n	0, \n	1,\n	 2\n");
+	int number = Convert.ToInt32(Console.Read());
+	Switch(number)
+	{
+		case 0
+			Console.WriteLine("General Kenobi...");
+			break;
+		case 1
+			Console.WriteLine("Hi there what can I do for you?");	
+			break;
+		case 2
+			Console.WriteLine("So... How have you been?");
+			break;
+		default
+			Console.WiriteLine("Don't know what to do with this...");	
+	}
+		}
+	}
+}
+</value>
+  </data>
 </root>

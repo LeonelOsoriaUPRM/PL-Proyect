@@ -106,5 +106,36 @@ namespace BabyCsharpProject.Properties {
                 return ResourceManager.GetString("HelloWorld.Text", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///
+        ///namespace LearningSpace
+        ///{
+        ///	static class Program
+        ///	{
+        ///		static void Main(string[] args)
+        ///		{
+        ///Console.WriteLine(&quot;Enter option desired: \n	0, \n	1,\n	 2\n&quot;);
+        ///	int number = Convert.ToInt32(Console.Read());
+        ///	Switch(number)
+        ///	{
+        ///		case 0
+        ///			Console.WriteLine(&quot;General Kenobi...&quot;);
+        ///			break;
+        ///		case 1
+        ///			Console.WriteLine(&quot;Hi there what can I do for you?&quot;);	
+        ///			break;
+        ///		case 2
+        ///			Console.WriteLine(&quot;So... How have you been?&quot;);
+        ///			break;
+        ///		default
+        ///			Console.WiriteLine(&quot;Don&apos;t know what  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Kenobi {
+            get {
+                return ResourceManager.GetString("Kenobi", resourceCulture);
+            }
+        }
     }
 }

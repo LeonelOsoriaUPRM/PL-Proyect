@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9FFC6AEB-EC1A-48EF-A3D1-24CD387AD5E9}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>BabyCsharpProject</RootNamespace>
     <AssemblyName>BabyCsharpProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -79,7 +79,6 @@
     <Compile Include="elseForm.designer.cs">
       <DependentUpon>elseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Examples.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="forForm.cs">
       <SubType>Form</SubType>

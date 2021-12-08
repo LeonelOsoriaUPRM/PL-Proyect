@@ -36,7 +36,6 @@ namespace BabyCsharpProject
         private void checkSelection()
         {
             string t = "";
-            string t0 = "";
             bool a = true;
 
             switch (comboBox1.SelectedIndex)
