@@ -122,22 +122,22 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tbNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>111, 22</value>
   </data>
   <data name="tbNew.Text" xml:space="preserve">
     <value>New</value>
   </data>
   <data name="tbOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>111, 22</value>
   </data>
   <data name="tbOpen.Text" xml:space="preserve">
     <value>Open</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 6</value>
+    <value>108, 6</value>
   </data>
   <data name="tbSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>111, 22</value>
   </data>
   <data name="tbSaveAs.Text" xml:space="preserve">
     <value>SaveAs</value>
@@ -149,19 +149,19 @@
     <value>File</value>
   </data>
   <data name="defaultCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
+    <value>155, 22</value>
   </data>
   <data name="defaultCode.Text" xml:space="preserve">
     <value>Default Code</value>
   </data>
   <data name="clearOutputToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
+    <value>155, 22</value>
   </data>
   <data name="clearOutputToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clear Output</value>
+    <value>Clear Messages</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 6</value>
+    <value>152, 6</value>
   </data>
   <data name="tbEdit.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -394,7 +394,7 @@ namespace LearningSpace
     <value>NoControl</value>
   </data>
   <data name="returnbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 51</value>
+    <value>115, 296</value>
   </data>
   <data name="returnbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -418,13 +418,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;returnbt.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>13</value>
   </data>
   <data name="functionbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="functionbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 51</value>
+    <value>2, 296</value>
   </data>
   <data name="functionbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -448,13 +448,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;functionbt.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>12</value>
   </data>
   <data name="btn12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btn12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 296</value>
+    <value>2, 247</value>
   </data>
   <data name="btn12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -478,13 +478,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;btn12.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="breakbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="breakbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 296</value>
+    <value>115, 247</value>
   </data>
   <data name="breakbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -508,13 +508,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;breakbt.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="casebt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="casebt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 247</value>
+    <value>115, 198</value>
   </data>
   <data name="casebt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -538,13 +538,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;casebt.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="switchbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="switchbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 247</value>
+    <value>2, 198</value>
   </data>
   <data name="switchbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -568,13 +568,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;switchbt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="forbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="forbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 198</value>
+    <value>115, 149</value>
   </data>
   <data name="forbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -598,13 +598,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;forbt.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="whilebt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="whilebt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 198</value>
+    <value>2, 149</value>
   </data>
   <data name="whilebt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -628,13 +628,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;whilebt.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="elsebt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="elsebt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 149</value>
+    <value>115, 100</value>
   </data>
   <data name="elsebt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -658,13 +658,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;elsebt.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="ifbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="ifbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 149</value>
+    <value>2, 100</value>
   </data>
   <data name="ifbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -688,13 +688,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;ifbt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="mathbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="mathbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 100</value>
+    <value>115, 51</value>
   </data>
   <data name="mathbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -718,13 +718,13 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;mathbt.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="variableSetbt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="variableSetbt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 100</value>
+    <value>2, 51</value>
   </data>
   <data name="variableSetbt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -748,7 +748,7 @@ namespace LearningSpace
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;variableSetbt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="printValuebtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -766,7 +766,7 @@ namespace LearningSpace
     <value>13</value>
   </data>
   <data name="printValuebtn.Text" xml:space="preserve">
-    <value>Print Value</value>
+    <value>Input</value>
   </data>
   <data name="&gt;&gt;printValuebtn.Name" xml:space="preserve">
     <value>printValuebtn</value>
@@ -796,7 +796,7 @@ namespace LearningSpace
     <value>12</value>
   </data>
   <data name="printTextBt.Text" xml:space="preserve">
-    <value>Print Text</value>
+    <value>Print</value>
   </data>
   <data name="&gt;&gt;printTextBt.Name" xml:space="preserve">
     <value>printTextBt</value>

@@ -330,8 +330,6 @@ namespace BabyCsharpProject
             resources.ApplyResources(this.buttonPanel, "buttonPanel");
             this.buttonPanel.Controls.Add(this.printTextBt);
             this.buttonPanel.Controls.Add(this.printValuebtn);
-            this.buttonPanel.Controls.Add(this.functionbt);
-            this.buttonPanel.Controls.Add(this.returnbt);
             this.buttonPanel.Controls.Add(this.variableSetbt);
             this.buttonPanel.Controls.Add(this.mathbt);
             this.buttonPanel.Controls.Add(this.ifbt);
@@ -342,6 +340,8 @@ namespace BabyCsharpProject
             this.buttonPanel.Controls.Add(this.casebt);
             this.buttonPanel.Controls.Add(this.btn12);
             this.buttonPanel.Controls.Add(this.breakbt);
+            this.buttonPanel.Controls.Add(this.functionbt);
+            this.buttonPanel.Controls.Add(this.returnbt);
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
