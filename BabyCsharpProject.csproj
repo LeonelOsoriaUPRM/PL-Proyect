@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9FFC6AEB-EC1A-48EF-A3D1-24CD387AD5E9}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>BabyCsharpProject</RootNamespace>
     <AssemblyName>BabyCsharpProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -101,17 +104,28 @@
     <Compile Include="ifForm.designer.cs">
       <DependentUpon>ifForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LexerParserClases\EvalSyntax.cs" />
-    <Compile Include="LexerParserClases\EvalSyntxBinary.cs" />
+    <Compile Include="LexerParserClases\Binding\Binder.cs" />
+    <Compile Include="LexerParserClases\Binding\BoundBinaryExpress.cs" />
+    <Compile Include="LexerParserClases\Binding\BoundBinaryOppType.cs" />
+    <Compile Include="LexerParserClases\Binding\BoundExpress.cs" />
+    <Compile Include="LexerParserClases\Binding\BoundLiteralExpress.cs" />
+    <Compile Include="LexerParserClases\Binding\BoundNode.cs" />
+    <Compile Include="LexerParserClases\Binding\BoundNodeType.cs" />
+    <Compile Include="LexerParserClases\Binding\BoundUnaryExpress.cs" />
+    <Compile Include="LexerParserClases\Binding\BoundUnaryOppType.cs" />
     <Compile Include="LexerParserClases\Evaluator.cs" />
-    <Compile Include="LexerParserClases\Lexer.cs" />
-    <Compile Include="LexerParserClases\NumEvalSyntx.cs" />
-    <Compile Include="LexerParserClases\ParenExpressSntx.cs" />
-    <Compile Include="LexerParserClases\Parser.cs" />
-    <Compile Include="LexerParserClases\SntxNode.cs" />
-    <Compile Include="LexerParserClases\SntxToken.cs" />
-    <Compile Include="LexerParserClases\SntxTree.cs" />
-    <Compile Include="LexerParserClases\TypeOfSyntax.cs" />
+    <Compile Include="LexerParserClases\Syntax\EvalSyntax.cs" />
+    <Compile Include="LexerParserClases\Syntax\EvalSyntxBinary.cs" />
+    <Compile Include="LexerParserClases\Syntax\Lexer.cs" />
+    <Compile Include="LexerParserClases\Syntax\NumEvalSyntx.cs" />
+    <Compile Include="LexerParserClases\Syntax\ParenExpressSntx.cs" />
+    <Compile Include="LexerParserClases\Syntax\Parser.cs" />
+    <Compile Include="LexerParserClases\Syntax\SntxNode.cs" />
+    <Compile Include="LexerParserClases\Syntax\SntxToken.cs" />
+    <Compile Include="LexerParserClases\Syntax\SntxTree.cs" />
+    <Compile Include="LexerParserClases\Syntax\SyntaxFacts.cs" />
+    <Compile Include="LexerParserClases\Syntax\TypeOfSyntax.cs" />
+    <Compile Include="LexerParserClases\Syntax\UnaryEvalSyntxBinary.cs" />
     <Compile Include="mathForm.cs">
       <SubType>Form</SubType>
     </Compile>

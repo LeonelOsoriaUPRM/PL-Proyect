@@ -1,4 +1,4 @@
-﻿namespace BabyCsharpProject.LexerParserClases
+﻿namespace BabyCsharpProject.LexerParserClases.Syntax
 {
     public abstract class EvalSyntax : SntxNode
     {

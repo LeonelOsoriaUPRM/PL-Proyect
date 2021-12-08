@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace BabyCsharpProject.LexerParserClases
+namespace BabyCsharpProject.LexerParserClases.Syntax
 {
     public sealed class SntxToken : SntxNode
     {

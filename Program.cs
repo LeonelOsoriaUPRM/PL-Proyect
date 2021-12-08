@@ -1,10 +1,13 @@
-﻿using BabyCsharpProject.LexerParserClases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Lexer = BabyCsharpProject.LexerParserClases.Lexer;
+using BabyCsharpProject.LexerParserClases;
+using BabyCsharpProject.LexerParserClases.Binding;
+using BabyCsharpProject.LexerParserClases.Syntax;
+using Lexer = BabyCsharpProject.LexerParserClases.Syntax.Lexer;
 
 namespace BabyCsharpProject
 {
@@ -13,11 +16,13 @@ namespace BabyCsharpProject
         [STAThread]
         private static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World, we're making a compiler baby!");
+            
+            Console.WriteLine("Hello World, we're making a compiler baby!");
+            /*
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TestForm());
-            /*
+            */
             var showTree = false;
             while (true)
             {
@@ -27,19 +32,21 @@ namespace BabyCsharpProject
 
                     return;
 
-                if (line == "#showTree")
+                if(line == "#showTree")
                 {
                     showTree = !showTree;
                     Console.WriteLine(showTree ? "Showing parse trees." : "Not showing parse trees.");
                     continue;
-                }
-                else if (line == "#clear")
+                }else if(line == "#clear")
                 {
                     Console.Clear();
                     continue;
                 }
                 var sntxTree = SntxTree.Parse(line);
+                var binder = new Binder();
+                var boundExpression = binder.BindExpression(sntxTree.Root);
 
+                var diagnostics = sntxTree.Diagnostics.Concat(binder.Diagnostics).ToArray();
                 if (showTree)
                 {
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -48,19 +55,20 @@ namespace BabyCsharpProject
 
                     Console.ResetColor();
                 }
-                if (!sntxTree.Diagnostics.Any())
+
+                if (!diagnostics.Any())
                 {
-                    var eval = new Evaluator(sntxTree.Root);
+                    var eval = new Evaluator(boundExpression);
                     var result = eval.Evaluate();
                     Console.WriteLine(result);
-
+                   
                 }
                 else
                 {
-
+                 
                     Console.ForegroundColor = ConsoleColor.DarkRed;
 
-                    foreach (var diag in sntxTree.Diagnostics)
+                    foreach (var diag in diagnostics)
                         Console.Write(diag);
 
                     Console.ResetColor();
@@ -77,12 +85,12 @@ namespace BabyCsharpProject
                         Console.WriteLine($"{stringToken.Value} ");
                     Console.WriteLine();
                 }*/
+                
 
+            }
 
         }
 
-    }
-    /*
         static void TreetyPrint(SntxNode node, string level = "", bool isLast = true)
         {
             var marker = isLast ? "|__" : "|--";
@@ -90,7 +98,7 @@ namespace BabyCsharpProject
             Console.Write(marker);
             Console.Write(node.Type);
 
-            if (node is SntxToken t && t.Value != null)
+            if(node is SntxToken t && t.Value != null)
             {
                 Console.Write(" ");
                 Console.Write(t.Value);
@@ -101,11 +109,11 @@ namespace BabyCsharpProject
             //level += "     ";
             level += isLast ? "   " : "|  ";
 
-            var lastChild = node.GetChildren().LastOrDefault();
-
+            var lastChild= node.GetChildren().LastOrDefault();
+            
 
             foreach (var child in node.GetChildren())
                 TreetyPrint(child, level, child == lastChild);
         }
-    */
+    }
 }
