@@ -13,18 +13,12 @@ This IDE features a button panel with some of the most frequently used functions
 	
 	-More advanced built-in example programs 
 	
-	-Possibility of saving user written code
-	
 	-Possibility of opening .cs files
 	
 	-Context specific text highlighting like most IDEs
 
 **Features Missing:**
-
-	-Explanations on some functions
 	
 	-Variable Array support
-	
-	-Simple usage tutorial
 
 
