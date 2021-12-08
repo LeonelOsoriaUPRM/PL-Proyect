@@ -51,14 +51,9 @@ namespace BabyCsharpProject
             this.button2.Click += new System.EventHandler(this.button1_Click);
         }
 
-        private void TestForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbHelloWorld_click(object sender, EventArgs e)
         {
-            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\tConsole.Write(\"Hello World\\n\");\n\t\t\tConsole.Read();\n\t\t}\n\t}\n}";
+            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\tConsole.WriteLine(\"Hello World\\n\");\n\t\t\tConsole.ReadLine();\n\t\t}\n\t}\n}";
         }
 
         private void tbSaveAs_Click(object sender, EventArgs e)
@@ -99,13 +94,6 @@ namespace BabyCsharpProject
             help.Show();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-            //
-            //Mark for deletion if safe
-            //
-        }
-
         private void defaultCodeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t\tConsole.ReadLine();//This will output any Console.WriteLine commands in the code\n\t\t}\n\t}\n}";
@@ -129,13 +117,6 @@ namespace BabyCsharpProject
         }
 
         //Custom functions end
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            //
-            //Mark for deletion if safe
-            //
-        }
 
         private void printTextBt_Click(object sender, EventArgs e)
         {
@@ -447,7 +428,7 @@ namespace BabyCsharpProject
 
         private void tbNew_Click(object sender, EventArgs e)
         {
-            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t}\n\t}\n}";
+            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t\tConsole.ReadLine();//This will output any Console.WriteLine commands in the code\n\t\t}\n\t}\n}";
         }
     }
 }

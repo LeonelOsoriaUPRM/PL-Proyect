@@ -47,7 +47,8 @@
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(351, 83);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "Explanation of how returns work and how they\'re used\n\n\n\n\n\n0";
+            this.richTextBox1.Text = "Returns are used during function creation, a feature that\'s currently unavailable" +
+    ".  Hopefully it\'ll be added in a future update.";
             // 
             // label1
             // 

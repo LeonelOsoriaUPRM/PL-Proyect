@@ -20,51 +20,6 @@ namespace BabyCsharpProject
             TestForm.forForm = null;
         }
 
-        private void forForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             Clipboard.SetText("for( " + textBox4.Text + " ; " + textBox3.Text + " ; " + textBox5.Text + " )\n\t\t\t{\n\t\t\t\t//Place code to be looped here\n\t\t\t\t\n\t\t\t}");
@@ -154,7 +109,7 @@ namespace BabyCsharpProject
                     break;
 
                 default:
-                    errorLabel1.Text = "Please select + or -";
+                    errorLabel1.Text = "Please select ++ or --";
                     er = true;
                     break;
             }
@@ -165,7 +120,7 @@ namespace BabyCsharpProject
                 er = true;
             }
 
-            if (textBox2.Text == string.Empty || !int.TryParse(textBox2.Text, out _))
+            else if (textBox2.Text == string.Empty || !int.TryParse(textBox2.Text, out _))
             {
                 errorLabel1.Text = "Please enter an integer for the limit condition";
                 er = true;
