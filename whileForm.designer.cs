@@ -48,7 +48,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(406, 83);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "Explain the loop of the while\n\n\n\n\n\n0";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label1
             // 

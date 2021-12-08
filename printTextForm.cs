@@ -22,7 +22,7 @@ namespace BabyCsharpProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("ConsoleWrite(\"" + textBox1.Text + "\");");
+            Clipboard.SetText("Console.WriteLine(" + textBox1.Text + ");");
             this.Close();
         }
 
@@ -30,7 +30,7 @@ namespace BabyCsharpProject
         {
             if (e.KeyChar == (char)Keys.Return)
             {
-                Clipboard.SetText("ConsoleWrite(\"" + textBox1.Text + "\");");
+                Clipboard.SetText("Console.WriteLine(" + textBox1.Text + ");");
                 this.Close();
             }
         }

@@ -34,5 +34,10 @@ namespace BabyCsharpProject
                 this.Close();
             }
         }
+
+        private void ifForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

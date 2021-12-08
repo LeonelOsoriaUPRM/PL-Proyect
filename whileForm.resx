@@ -117,6 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>The While loop is a loop that continue to execute an action until the condition within the parenthesis becomes FALSE.
+
+You can test variable conditions with comparators:
+	
+	"==" "&gt;=" "&lt;=" "!=" "&gt;" "&lt;"
+
+NOTE: 
+	The variables that will be tested need to be instantiated before being compared in the While loop
+Example:
+	int this = 3;	// instantianted variable this
+	While( this != 10){     	// Checks if this is not equal to 10
+		this++;	// if it is not equal to 10 this is incremented by 1
+	}
+You can test mutiple conditions by using the "&amp;&amp;" (logic AND) and "||" (logic OR)
+
+Example:
+	bool that = False
+	int this = 3;	  // instantianted variable this
+	While( this != 10 &amp;&amp; that == TRUE){     	  // Checks if "this" is not equal to 10 and if "that" is TRUE
+		this++;	                                       // if "this"is not equal to 10 this is incremented by 1
+		that = !that                                     //inverts the value stored in the variable "that"
+	}
+Like For loops and if staments, while loops are nestable. For loops while loops, switch statements and if statements can be placed inside  a while loop.
+For info on nesting refer to if statement button info.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

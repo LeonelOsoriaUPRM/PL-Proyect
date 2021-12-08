@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using System.CodeDom.Compiler;
 using System.Diagnostics;
 using Microsoft.CSharp;
+using System.IO;
+
+//There's a few invisible items on this form because it was easier to make then inaccessible was easier and faster than removing them
 
 namespace BabyCsharpProject
 {
@@ -48,19 +51,22 @@ namespace BabyCsharpProject
             this.button2.Click += new System.EventHandler(this.button1_Click);
         }
 
-        private void TestForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbHelloWorld_click(object sender, EventArgs e)
         {
-            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\tConsole.Write(\"Hello World\\n\");\n\t\t\tConsole.Read();\n\t\t}\n\t}\n}";
+            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\tConsole.WriteLine(\"Hello World\\n\");\n\t\t\tConsole.ReadLine();\n\t\t}\n\t}\n}";
         }
 
         private void tbSaveAs_Click(object sender, EventArgs e)
         {
-
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if(saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                using (Stream s = File.Open(saveFileDialog.FileName, FileMode.CreateNew))
+                using (StreamWriter streamWriter = new StreamWriter(s))
+                {
+                    streamWriter.Write(codeInTextPanel.Text);
+                }
+            }
         }
 
         private void sendButton_Click(object sender, EventArgs e)
@@ -88,43 +94,29 @@ namespace BabyCsharpProject
             help.Show();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-            //
-            //Mark for deletion if safe
-            //
-        }
-
         private void defaultCodeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t}\n\t}\n}";
+            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t\tConsole.ReadLine();//This will output any Console.WriteLine commands in the code\n\t\t}\n\t}\n}";
         }
 
         //Custom functions start
 
         private void ConsoleWrite(string s)
         {
-            outputScreen.SelectionColor = Color.Green;
+            outputScreen.ForeColor = Color.Green;
             s = ">" + s;
             outputScreen.AppendText(s + "\n");
         }
 
         private void UserWrite(string s)
         {
-            outputScreen.SelectionColor = Color.Red;
+            outputScreen.ForeColor = Color.Red;
             s = "-" + s;
             outputScreen.AppendText(s + "\n");
             entryField.Text = "";
         }
 
         //Custom functions end
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            //
-            //Mark for deletion if safe
-            //
-        }
 
         private void printTextBt_Click(object sender, EventArgs e)
         {
@@ -400,6 +392,9 @@ namespace BabyCsharpProject
                                 ", Error Number: " + CompErr.ErrorNumber +
                                 ", '" + CompErr.ErrorText + ";" +
                                 Environment.NewLine + Environment.NewLine;
+                    ConsoleWrite("Check for semicolons \"(;\"");
+                    ConsoleWrite("Verify the placement of the code");
+                    ConsoleWrite("Make sure all \"{\" have an equivalent \"}\"");
                 }
             }
             else
@@ -414,6 +409,26 @@ namespace BabyCsharpProject
                 //if (ButtonObject.Text == "Run") Process.Start(Output);
             }
             //Stop Gap Solution, code from https://docs.microsoft.com/en-us/troubleshoot/dotnet/csharp/compile-code-using-compiler
+        }
+
+        private void tbOpen_Click(object sender, EventArgs e)
+        {
+            Stream stream;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            if(openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                if ((stream = openFileDialog.OpenFile()) != null)
+                {
+                    string filename = openFileDialog.FileName;
+                    codeInTextPanel.Text = File.ReadAllText(filename);
+                }
+            }
+        }
+
+        private void tbNew_Click(object sender, EventArgs e)
+        {
+            codeInTextPanel.Text = "using System;\n\nnamespace LearningSpace\n{\n\tstatic class Program\n\t{\n\t\tstatic void Main(string[] args)\n\t\t{\n\t\t\t//Your code goes here!\n\t\t\t\n\t\t\tConsole.ReadLine();//This will output any Console.WriteLine commands in the code\n\t\t}\n\t}\n}";
         }
     }
 }

@@ -40,6 +40,7 @@ namespace BabyCsharpProject
             this.defaultCode = new System.Windows.Forms.ToolStripMenuItem();
             this.clearOutputToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.buildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbRun = new System.Windows.Forms.ToolStripMenuItem();
             this.tbExample = new System.Windows.Forms.ToolStripMenuItem();
             this.tbHelloWorld = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +69,6 @@ namespace BabyCsharpProject
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
@@ -101,11 +101,13 @@ namespace BabyCsharpProject
             // 
             this.tbNew.Name = "tbNew";
             resources.ApplyResources(this.tbNew, "tbNew");
+            this.tbNew.Click += new System.EventHandler(this.tbNew_Click);
             // 
             // tbOpen
             // 
             this.tbOpen.Name = "tbOpen";
             resources.ApplyResources(this.tbOpen, "tbOpen");
+            this.tbOpen.Click += new System.EventHandler(this.tbOpen_Click);
             // 
             // toolStripSeparator1
             // 
@@ -144,6 +146,12 @@ namespace BabyCsharpProject
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             // 
+            // buildToolStripMenuItem
+            // 
+            this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
+            resources.ApplyResources(this.buildToolStripMenuItem, "buildToolStripMenuItem");
+            this.buildToolStripMenuItem.Click += new System.EventHandler(this.buildToolStripMenuItem_Click);
+            // 
             // tbRun
             // 
             this.tbRun.Name = "tbRun";
@@ -180,7 +188,6 @@ namespace BabyCsharpProject
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // outputScreen
             // 
@@ -322,8 +329,6 @@ namespace BabyCsharpProject
             resources.ApplyResources(this.buttonPanel, "buttonPanel");
             this.buttonPanel.Controls.Add(this.printTextBt);
             this.buttonPanel.Controls.Add(this.printValuebtn);
-            this.buttonPanel.Controls.Add(this.functionbt);
-            this.buttonPanel.Controls.Add(this.returnbt);
             this.buttonPanel.Controls.Add(this.variableSetbt);
             this.buttonPanel.Controls.Add(this.mathbt);
             this.buttonPanel.Controls.Add(this.ifbt);
@@ -334,8 +339,9 @@ namespace BabyCsharpProject
             this.buttonPanel.Controls.Add(this.casebt);
             this.buttonPanel.Controls.Add(this.btn12);
             this.buttonPanel.Controls.Add(this.breakbt);
+            this.buttonPanel.Controls.Add(this.functionbt);
+            this.buttonPanel.Controls.Add(this.returnbt);
             this.buttonPanel.Name = "buttonPanel";
-            this.buttonPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // button1
             // 
@@ -354,31 +360,24 @@ namespace BabyCsharpProject
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             // 
-            // buildToolStripMenuItem
-            // 
-            this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
-            resources.ApplyResources(this.buildToolStripMenuItem, "buildToolStripMenuItem");
-            this.buildToolStripMenuItem.Click += new System.EventHandler(this.buildToolStripMenuItem_Click);
-            // 
             // TestForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Controls.Add(this.codeInTextPanel);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.outputScreen);
             this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mainMenu);
-            this.Controls.Add(this.codeInTextPanel);
             this.Controls.Add(this.entryField);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.textBox1);
             this.ForeColor = System.Drawing.Color.Black;
             this.MainMenuStrip = this.mainMenu;
             this.Name = "TestForm";
-            this.Load += new System.EventHandler(this.TestForm_Load);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
             this.buttonPanel.ResumeLayout(false);

@@ -46,16 +46,16 @@ namespace BabyCsharpProject
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.Location = new System.Drawing.Point(11, 11);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(351, 83);
+            this.richTextBox1.Size = new System.Drawing.Size(430, 327);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "Explain how the default case works here\n\n\n\n\n\n0";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label1.Location = new System.Drawing.Point(10, 103);
+            this.label1.Location = new System.Drawing.Point(10, 341);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(363, 25);
             this.label1.TabIndex = 1;
@@ -66,7 +66,7 @@ namespace BabyCsharpProject
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label2.Location = new System.Drawing.Point(11, 125);
+            this.label2.Location = new System.Drawing.Point(11, 363);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 25);
             this.label2.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace BabyCsharpProject
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(69, 130);
+            this.button1.Location = new System.Drawing.Point(69, 368);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 20);
             this.button1.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace BabyCsharpProject
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(372, 151);
+            this.ClientSize = new System.Drawing.Size(451, 389);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
