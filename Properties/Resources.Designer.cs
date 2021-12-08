@@ -95,6 +95,32 @@ namespace BabyCsharpProject.Properties {
         ///	{
         ///		static void Main(string[] args)
         ///		{
+        ///			//Your code goes here!
+        ///			bool correct = false;
+        ///           			int guess = 69;
+        ///           			Console.WriteLine(&quot;Can you guess what integer Im thinking of?&quot;);
+        ///            			while (correct == false)
+        ///            			{
+        ///               				int userGuess = Convert.ToInt32(Console.ReadLine());
+        ///                			if(userGuess == guess)
+        ///                			{
+        ///                    				Console.WriteLi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Guessing {
+            get {
+                return ResourceManager.GetString("Guessing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///
+        ///namespace LearningSpace
+        ///{
+        ///	static class Program
+        ///	{
+        ///		static void Main(string[] args)
+        ///		{
         ///			Console.WriteLine(&quot;Hello World&quot;);
         ///			Console.ReadLine();
         ///		}
@@ -187,6 +213,34 @@ namespace BabyCsharpProject.Properties {
         internal static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///
+        ///namespace LearningSpace
+        ///{
+        ///	static class Program
+        ///	{
+        ///		static void Main(string[] args)
+        ///		{
+        ///			//Your code goes here!
+        ///           			 Console.WriteLine(&quot;Enter an integer : &quot;);
+        ///           			 int n = Convert.ToInt32(Console.ReadLine());
+        ///           			 if(n%2==0)
+        ///            			{
+        ///               				 Console.WriteLine(n+&quot; is even&quot;);
+        ///            			}
+        ///            			else
+        ///            			{
+        ///                			Console.WriteLine(n+&quot; is odd&quot;);
+        ///            			}
+        ///			Console.ReadLine();//This [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string OddEven {
+            get {
+                return ResourceManager.GetString("OddEven", resourceCulture);
             }
         }
     }

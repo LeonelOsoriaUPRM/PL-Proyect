@@ -463,5 +463,19 @@ namespace BabyCsharpProject
             ConsoleWrite("If you're ever confused as to why something isn't working load up a few examples, you might find a solution there");
             codeInTextPanel.Text = Properties.Resources.a_b_Text;
         }
+
+        private void oddOrEvenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            outputScreen.Text = "";
+            ConsoleWrite("If you're ever confused as to why something isn't working load up a few examples, you might find a solution there");
+            codeInTextPanel.Text = Properties.Resources.OddEven;
+        }
+
+        private void guessingGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            outputScreen.Text = "";
+            ConsoleWrite("If you're ever confused as to why something isn't working load up a few examples, you might find a solution there");
+            codeInTextPanel.Text = Properties.Resources.Guessing;
+        }
     }
 }

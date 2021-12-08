@@ -137,6 +137,35 @@ namespace LearningSpace
 	}
 }</value>
   </data>
+  <data name="Guessing" xml:space="preserve">
+    <value>using System;
+
+namespace LearningSpace
+{
+	static class Program
+	{
+		static void Main(string[] args)
+		{
+			//Your code goes here!
+			bool correct = false;
+           			int guess = 69;
+           			Console.WriteLine("Can you guess what integer Im thinking of?");
+            			while (correct == false)
+            			{
+               				int userGuess = Convert.ToInt32(Console.ReadLine());
+                			if(userGuess == guess)
+                			{
+                    				Console.WriteLine("You got it!");
+                			}
+                			else
+                			{
+                   				 Console.WriteLine("That's not my number try again");
+                			}	
+            			}
+		}
+	}
+}</value>
+  </data>
   <data name="HelloWorld.Text" xml:space="preserve">
     <value>using System;
 
@@ -229,6 +258,31 @@ namespace LearningSpace
 			string name = Console.ReadLine();
 			Console.Write("Hello " + name);
 			Console.ReadLine();
+		}
+	}
+}</value>
+  </data>
+  <data name="OddEven" xml:space="preserve">
+    <value>using System;
+
+namespace LearningSpace
+{
+	static class Program
+	{
+		static void Main(string[] args)
+		{
+			//Your code goes here!
+           			 Console.WriteLine("Enter an integer : ");
+           			 int n = Convert.ToInt32(Console.ReadLine());
+           			 if(n%2==0)
+            			{
+               				 Console.WriteLine(n+" is even");
+            			}
+            			else
+            			{
+                			Console.WriteLine(n+" is odd");
+            			}
+			Console.ReadLine();//This will output any Console.WriteLine commands in the code
 		}
 	}
 }</value>

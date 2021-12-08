@@ -44,10 +44,12 @@ namespace BabyCsharpProject
             this.tbRun = new System.Windows.Forms.ToolStripMenuItem();
             this.tbExample = new System.Windows.Forms.ToolStripMenuItem();
             this.tbHelloWorld = new System.Windows.Forms.ToolStripMenuItem();
-            this.forExampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printExampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nameEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mathExampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printExampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.forExampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oddOrEvenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guessingGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -169,7 +171,9 @@ namespace BabyCsharpProject
             this.printExampleToolStripMenuItem,
             this.nameEntryToolStripMenuItem,
             this.mathExampleToolStripMenuItem,
-            this.forExampleToolStripMenuItem});
+            this.forExampleToolStripMenuItem,
+            this.oddOrEvenToolStripMenuItem,
+            this.guessingGameToolStripMenuItem});
             this.tbExample.Name = "tbExample";
             resources.ApplyResources(this.tbExample, "tbExample");
             // 
@@ -179,11 +183,11 @@ namespace BabyCsharpProject
             resources.ApplyResources(this.tbHelloWorld, "tbHelloWorld");
             this.tbHelloWorld.Click += new System.EventHandler(this.tbHelloWorld_click);
             // 
-            // forExampleToolStripMenuItem
+            // printExampleToolStripMenuItem
             // 
-            this.forExampleToolStripMenuItem.Name = "forExampleToolStripMenuItem";
-            resources.ApplyResources(this.forExampleToolStripMenuItem, "forExampleToolStripMenuItem");
-            this.forExampleToolStripMenuItem.Click += new System.EventHandler(this.forExampleToolStripMenuItem_Click);
+            this.printExampleToolStripMenuItem.Name = "printExampleToolStripMenuItem";
+            resources.ApplyResources(this.printExampleToolStripMenuItem, "printExampleToolStripMenuItem");
+            this.printExampleToolStripMenuItem.Click += new System.EventHandler(this.printExampleToolStripMenuItem_Click);
             // 
             // nameEntryToolStripMenuItem
             // 
@@ -197,11 +201,23 @@ namespace BabyCsharpProject
             resources.ApplyResources(this.mathExampleToolStripMenuItem, "mathExampleToolStripMenuItem");
             this.mathExampleToolStripMenuItem.Click += new System.EventHandler(this.mathExampleToolStripMenuItem_Click);
             // 
-            // printExampleToolStripMenuItem
+            // forExampleToolStripMenuItem
             // 
-            this.printExampleToolStripMenuItem.Name = "printExampleToolStripMenuItem";
-            resources.ApplyResources(this.printExampleToolStripMenuItem, "printExampleToolStripMenuItem");
-            this.printExampleToolStripMenuItem.Click += new System.EventHandler(this.printExampleToolStripMenuItem_Click);
+            this.forExampleToolStripMenuItem.Name = "forExampleToolStripMenuItem";
+            resources.ApplyResources(this.forExampleToolStripMenuItem, "forExampleToolStripMenuItem");
+            this.forExampleToolStripMenuItem.Click += new System.EventHandler(this.forExampleToolStripMenuItem_Click);
+            // 
+            // oddOrEvenToolStripMenuItem
+            // 
+            this.oddOrEvenToolStripMenuItem.Name = "oddOrEvenToolStripMenuItem";
+            resources.ApplyResources(this.oddOrEvenToolStripMenuItem, "oddOrEvenToolStripMenuItem");
+            this.oddOrEvenToolStripMenuItem.Click += new System.EventHandler(this.oddOrEvenToolStripMenuItem_Click);
+            // 
+            // guessingGameToolStripMenuItem
+            // 
+            this.guessingGameToolStripMenuItem.Name = "guessingGameToolStripMenuItem";
+            resources.ApplyResources(this.guessingGameToolStripMenuItem, "guessingGameToolStripMenuItem");
+            this.guessingGameToolStripMenuItem.Click += new System.EventHandler(this.guessingGameToolStripMenuItem_Click);
             // 
             // tbHelp
             // 
@@ -463,6 +479,8 @@ namespace BabyCsharpProject
         private System.Windows.Forms.ToolStripMenuItem nameEntryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mathExampleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printExampleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oddOrEvenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem guessingGameToolStripMenuItem;
     }
 }
 

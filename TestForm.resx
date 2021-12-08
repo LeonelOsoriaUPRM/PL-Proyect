@@ -211,6 +211,18 @@
   <data name="forExampleToolStripMenuItem.Text" xml:space="preserve">
     <value>SwitchCase Example</value>
   </data>
+  <data name="oddOrEvenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="oddOrEvenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Odd or Even</value>
+  </data>
+  <data name="guessingGameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="guessingGameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Guessing Game</value>
+  </data>
   <data name="tbExample.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
   </data>
@@ -3583,10 +3595,10 @@ namespace LearningSpace
   <data name="&gt;&gt;tbHelloWorld.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;forExampleToolStripMenuItem.Name" xml:space="preserve">
-    <value>forExampleToolStripMenuItem</value>
+  <data name="&gt;&gt;printExampleToolStripMenuItem.Name" xml:space="preserve">
+    <value>printExampleToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;forExampleToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;printExampleToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;nameEntryToolStripMenuItem.Name" xml:space="preserve">
@@ -3601,10 +3613,22 @@ namespace LearningSpace
   <data name="&gt;&gt;mathExampleToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;printExampleToolStripMenuItem.Name" xml:space="preserve">
-    <value>printExampleToolStripMenuItem</value>
+  <data name="&gt;&gt;forExampleToolStripMenuItem.Name" xml:space="preserve">
+    <value>forExampleToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;printExampleToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;forExampleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oddOrEvenToolStripMenuItem.Name" xml:space="preserve">
+    <value>oddOrEvenToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;oddOrEvenToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guessingGameToolStripMenuItem.Name" xml:space="preserve">
+    <value>guessingGameToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;guessingGameToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbHelp.Name" xml:space="preserve">
