@@ -105,14 +105,14 @@ namespace BabyCsharpProject
 
         private void ConsoleWrite(string s)
         {
-            outputScreen.ForeColor = Color.Green;
+            outputScreen.SelectionColor = Color.Green;
             s = ">" + s;
             outputScreen.AppendText(s + "\n");
         }
 
         private void UserWrite(string s)
         {
-            outputScreen.ForeColor = Color.Red;
+            outputScreen.SelectionColor = Color.Red;
             s = "-" + s;
             outputScreen.AppendText(s + "\n");
             entryField.Text = "";
@@ -386,18 +386,21 @@ namespace BabyCsharpProject
                 //This code IS ours
                 c = false;
                 //This code IS ours
-                outputScreen.ForeColor = Color.Red;
+                outputScreen.SelectionColor = Color.Red;
+                outputScreen.AppendText("ERROR!");
                 foreach (CompilerError CompErr in results.Errors)
                 {
-                    outputScreen.Text = outputScreen.Text +
-                                "Line number " + CompErr.Line +
+                    outputScreen.SelectionColor = Color.Red;
+                    outputScreen.AppendText(
+                                "\nLine number " + CompErr.Line +
                                 ", Error Number: " + CompErr.ErrorNumber +
                                 ", '" + CompErr.ErrorText + ";" +
-                                Environment.NewLine + Environment.NewLine;
-                    ConsoleWrite("Check for semicolons \"(;\"");
-                    ConsoleWrite("Verify the placement of the code");
-                    ConsoleWrite("Make sure all \"{\" have an equivalent \"}\"");
+                                Environment.NewLine + Environment.NewLine);
                 }
+                ConsoleWrite("Don't worry this just means the code can't run as written, double check everyth");
+                ConsoleWrite("Check for semicolons \"(;\"");
+                ConsoleWrite("Verify the placement of the code");
+                ConsoleWrite("Make sure all \"{\" have an equivalent \"}\"");
             }
             else
             {

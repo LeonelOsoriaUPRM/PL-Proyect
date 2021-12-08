@@ -24,3 +24,4 @@ C:\Users\Lenyo\Source\Repos\LeonelOsoriaUPRM\PL-Proyect\obj\Debug\BabyCsharpProj
 C:\Users\Lenyo\Source\Repos\LeonelOsoriaUPRM\PL-Proyect\obj\Debug\BabyCsharpProject.csproj.CoreCompileInputs.cache
 C:\Users\Lenyo\Source\Repos\LeonelOsoriaUPRM\PL-Proyect\obj\Debug\BabyCsharpProject.exe
 C:\Users\Lenyo\Source\Repos\LeonelOsoriaUPRM\PL-Proyect\obj\Debug\BabyCsharpProject.pdb
+C:\Users\Lenyo\Source\Repos\LeonelOsoriaUPRM\PL-Proyect\obj\Debug\BabyCsharpProject.csproj.AssemblyReference.cache
